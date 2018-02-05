@@ -1,0 +1,228 @@
+spec:
+- ccache:
+    version: 3.3.4
+    arch:
+      platform: linux
+      platform_os: rhel7
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 7.2.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      gperf:
+        hash: 7mb2iuq2swfh2wayprtxyv6foizgckkz
+        type:
+        - build
+        - link
+      libxslt:
+        hash: 5d3pdyylxur7uhof6lrwcd5swzevrkff
+        type:
+        - build
+        - link
+      zlib:
+        hash: lafowlwsuzr7ukxa7pfjd5afe42gulfx
+        type:
+        - build
+        - link
+    hash: ywdnuzdm7c36b6a47dsy6dciazwtphuh
+- gperf:
+    version: 3.0.4
+    arch:
+      platform: linux
+      platform_os: rhel7
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 7.2.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: 7mb2iuq2swfh2wayprtxyv6foizgckkz
+- libxslt:
+    version: 1.1.29
+    arch:
+      platform: linux
+      platform_os: rhel7
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 7.2.0
+    namespace: builtin
+    parameters:
+      crypto: true
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      libgcrypt:
+        hash: s3ylgcedqctki6rji3xxviov7ag7epht
+        type:
+        - build
+        - link
+      libiconv:
+        hash: vgq3ruuoaf7l5whoyeyeszp46h2p4aaa
+        type:
+        - build
+        - link
+      libxml2:
+        hash: ex7qfaz3fauu7tjr4d33o6pmvqqishiz
+        type:
+        - build
+        - link
+      xz:
+        hash: ow65gtcqgjnkumr3iohqjmkdccrz455n
+        type:
+        - build
+        - link
+      zlib:
+        hash: lafowlwsuzr7ukxa7pfjd5afe42gulfx
+        type:
+        - build
+        - link
+    hash: 5d3pdyylxur7uhof6lrwcd5swzevrkff
+- libgcrypt:
+    version: 1.8.1
+    arch:
+      platform: linux
+      platform_os: rhel7
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 7.2.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      libgpg-error:
+        hash: bs27cmtdcy3ecz3hndlbapvknfcc4t75
+        type:
+        - build
+        - link
+    hash: s3ylgcedqctki6rji3xxviov7ag7epht
+- libgpg-error:
+    version: '1.27'
+    arch:
+      platform: linux
+      platform_os: rhel7
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 7.2.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: bs27cmtdcy3ecz3hndlbapvknfcc4t75
+- libiconv:
+    version: '1.15'
+    arch:
+      platform: linux
+      platform_os: rhel7
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 7.2.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: vgq3ruuoaf7l5whoyeyeszp46h2p4aaa
+- libxml2:
+    version: 2.9.4
+    arch:
+      platform: linux
+      platform_os: rhel7
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 7.2.0
+    namespace: builtin
+    parameters:
+      python: false
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      xz:
+        hash: ow65gtcqgjnkumr3iohqjmkdccrz455n
+        type:
+        - build
+        - link
+      zlib:
+        hash: lafowlwsuzr7ukxa7pfjd5afe42gulfx
+        type:
+        - build
+        - link
+    hash: ex7qfaz3fauu7tjr4d33o6pmvqqishiz
+- xz:
+    version: 5.2.3
+    arch:
+      platform: linux
+      platform_os: rhel7
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 7.2.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: ow65gtcqgjnkumr3iohqjmkdccrz455n
+- zlib:
+    version: 1.2.11
+    arch:
+      platform: linux
+      platform_os: rhel7
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 7.2.0
+    namespace: builtin
+    parameters:
+      optimize: true
+      pic: true
+      shared: true
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: lafowlwsuzr7ukxa7pfjd5afe42gulfx
+

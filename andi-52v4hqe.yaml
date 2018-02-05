@@ -1,0 +1,68 @@
+spec:
+- andi:
+    version: '0.10'
+    arch:
+      platform: linux
+      platform_os: rhel7
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 7.2.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      gsl:
+        hash: tm77hug2qfg223s2vzlph27qs6aieimg
+        type:
+        - build
+        - link
+      libdivsufsort:
+        hash: 3bvvae5cmjg2bhjpecb7fdjr3ojlfpbw
+        type:
+        - build
+        - link
+    hash: 52v4hqeri2jnzqrus5ronahxbcy5fsk7
+- gsl:
+    version: '2.4'
+    arch:
+      platform: linux
+      platform_os: rhel7
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 7.2.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: tm77hug2qfg223s2vzlph27qs6aieimg
+- libdivsufsort:
+    version: 2.0.1
+    arch:
+      platform: linux
+      platform_os: rhel7
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 7.2.0
+    namespace: builtin
+    parameters:
+      build_type: RelWithDebInfo
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: 3bvvae5cmjg2bhjpecb7fdjr3ojlfpbw
+

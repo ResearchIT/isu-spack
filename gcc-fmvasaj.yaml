@@ -1,0 +1,119 @@
+spec:
+- gcc:
+    version: 4.8.5
+    arch:
+      platform: linux
+      platform_os: rhel7
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 7.2.0
+    namespace: builtin
+    parameters:
+      binutils: false
+      languages:
+      - c
+      - c++
+      - fortran
+      patches:
+      - 0689c26bd7f38c5c9594eb8a4932ae7fce96cc8796c45839e050dc42c83112f1
+      piclibs: false
+      strip: false
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      gmp:
+        hash: je7dag2l7bymn43qofjpctzg5737d4zr
+        type:
+        - build
+        - link
+      mpc:
+        hash: ecwsgatadqu6ous5pqciu7aehutdnzzq
+        type:
+        - build
+        - link
+      mpfr:
+        hash: kh3nrg3uju3h6vf7bfgeu2e56orbwbw2
+        type:
+        - build
+        - link
+    hash: fmvasajclncshk4jprh7i4cq4uykbdwi
+- gmp:
+    version: 6.1.2
+    arch:
+      platform: linux
+      platform_os: rhel7
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 7.2.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: je7dag2l7bymn43qofjpctzg5737d4zr
+- mpc:
+    version: 1.0.3
+    arch:
+      platform: linux
+      platform_os: rhel7
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 7.2.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      gmp:
+        hash: je7dag2l7bymn43qofjpctzg5737d4zr
+        type:
+        - build
+        - link
+      mpfr:
+        hash: kh3nrg3uju3h6vf7bfgeu2e56orbwbw2
+        type:
+        - build
+        - link
+    hash: ecwsgatadqu6ous5pqciu7aehutdnzzq
+- mpfr:
+    version: 3.1.5
+    arch:
+      platform: linux
+      platform_os: rhel7
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 7.2.0
+    namespace: builtin
+    parameters:
+      patches:
+      - 88dfefa6d39c9fd5a26a40d9bbc73df8da93f946c65c06038026261d78d919f5
+      - dfd62a42a239c427bb44087b4a520edbcd65bae6ad1fbe07303c96ee8696afbd
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      gmp:
+        hash: je7dag2l7bymn43qofjpctzg5737d4zr
+        type:
+        - build
+        - link
+    hash: kh3nrg3uju3h6vf7bfgeu2e56orbwbw2
+

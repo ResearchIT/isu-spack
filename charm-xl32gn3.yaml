@@ -1,0 +1,28 @@
+spec:
+- charm:
+    version: 6.7.1
+    arch:
+      platform: linux
+      platform_os: rhel7
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 7.2.0
+    namespace: builtin
+    parameters:
+      backend: verbs
+      papi: false
+      patches:
+      - 92d507d8b72ac01f114f7772510049cc7656f93daeadef46e1f2b00ad8533d2b
+      - e636c3f88a6944c87d910d4c8fdf25146b60f57e09228497a6cc01c7dbae9569
+      shared: true
+      smp: true
+      tcp: false
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: xl32gn3nmb4m6w3bgfwyzxei7nwdxdqe
+

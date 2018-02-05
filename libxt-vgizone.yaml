@@ -1,0 +1,260 @@
+spec:
+- libxt:
+    version: 1.1.5
+    arch:
+      platform: linux
+      platform_os: rhel7
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 7.2.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      libice:
+        hash: 7wb56ij2vmtdri6zvpcco3qsdjdkxkjt
+        type:
+        - build
+        - link
+      libsm:
+        hash: sbyehqvhjpy477tzgnnseahupuck5fkg
+        type:
+        - build
+        - link
+      libx11:
+        hash: a3iefmp7xteiyspdgde6dxjjq5zmibil
+        type:
+        - build
+        - link
+    hash: vgizonefd5ebspfknf7k7ox6h2oh3hmf
+- libice:
+    version: 1.0.9
+    arch:
+      platform: linux
+      platform_os: rhel7
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 7.2.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: 7wb56ij2vmtdri6zvpcco3qsdjdkxkjt
+- libsm:
+    version: 1.2.2
+    arch:
+      platform: linux
+      platform_os: rhel7
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 7.2.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      libice:
+        hash: 7wb56ij2vmtdri6zvpcco3qsdjdkxkjt
+        type:
+        - build
+        - link
+    hash: sbyehqvhjpy477tzgnnseahupuck5fkg
+- libx11:
+    version: 1.6.5
+    arch:
+      platform: linux
+      platform_os: rhel7
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 7.2.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      kbproto:
+        hash: 4unn76zfy6jfelyd3lri6gr4ym24gwbz
+        type:
+        - build
+        - link
+      libxcb:
+        hash: pjve6ujiyi4q2323rohypqmknx3gwmyk
+        type:
+        - build
+        - link
+      xextproto:
+        hash: d5lnhxn4zphj3krlmmrcnow4o6cogazx
+        type:
+        - build
+        - link
+    hash: a3iefmp7xteiyspdgde6dxjjq5zmibil
+- kbproto:
+    version: 1.0.7
+    arch:
+      platform: linux
+      platform_os: rhel7
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 7.2.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: 4unn76zfy6jfelyd3lri6gr4ym24gwbz
+- libxcb:
+    version: '1.12'
+    arch:
+      platform: linux
+      platform_os: rhel7
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 7.2.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      libpthread-stubs:
+        hash: camtfo3hjyxhliv25sf7uugujjafxlh2
+        type:
+        - build
+        - link
+      libxau:
+        hash: zdeie66dhentrg6bu2vc3aavc7eyugj6
+        type:
+        - build
+        - link
+      libxdmcp:
+        hash: vwfsgkk3dtebeikbj675akv777htkwvf
+        type:
+        - build
+        - link
+    hash: pjve6ujiyi4q2323rohypqmknx3gwmyk
+- libpthread-stubs:
+    version: '0.4'
+    arch:
+      platform: linux
+      platform_os: rhel7
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 7.2.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: camtfo3hjyxhliv25sf7uugujjafxlh2
+- libxau:
+    version: 1.0.8
+    arch:
+      platform: linux
+      platform_os: rhel7
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 7.2.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      xproto:
+        hash: bfcjhug26grdqospzni2bnmp3s3iztmg
+        type:
+        - build
+        - link
+    hash: zdeie66dhentrg6bu2vc3aavc7eyugj6
+- xproto:
+    version: 7.0.31
+    arch:
+      platform: linux
+      platform_os: rhel7
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 7.2.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: bfcjhug26grdqospzni2bnmp3s3iztmg
+- libxdmcp:
+    version: 1.1.2
+    arch:
+      platform: linux
+      platform_os: rhel7
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 7.2.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: vwfsgkk3dtebeikbj675akv777htkwvf
+- xextproto:
+    version: 7.3.0
+    arch:
+      platform: linux
+      platform_os: rhel7
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 7.2.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: d5lnhxn4zphj3krlmmrcnow4o6cogazx
+

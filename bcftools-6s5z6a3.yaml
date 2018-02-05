@@ -1,0 +1,118 @@
+spec:
+- bcftools:
+    version: '1.6'
+    arch:
+      platform: linux
+      platform_os: rhel7
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 7.2.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      htslib:
+        hash: 6dqc4y6ovbymx2g65tn5mnqzturxscwi
+        type:
+        - build
+        - link
+    hash: 6s5z6a32oqdulj5rcgdmgbdh7ljcvybk
+- htslib:
+    version: '1.6'
+    arch:
+      platform: linux
+      platform_os: rhel7
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 7.2.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      bzip2:
+        hash: v5xhjvnna6ooq52nl6egqm3ydwnmtla6
+        type:
+        - build
+        - link
+      xz:
+        hash: ow65gtcqgjnkumr3iohqjmkdccrz455n
+        type:
+        - build
+        - link
+      zlib:
+        hash: lafowlwsuzr7ukxa7pfjd5afe42gulfx
+        type:
+        - build
+        - link
+    hash: 6dqc4y6ovbymx2g65tn5mnqzturxscwi
+- bzip2:
+    version: 1.0.6
+    arch:
+      platform: linux
+      platform_os: rhel7
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 7.2.0
+    namespace: builtin
+    parameters:
+      shared: true
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: v5xhjvnna6ooq52nl6egqm3ydwnmtla6
+- xz:
+    version: 5.2.3
+    arch:
+      platform: linux
+      platform_os: rhel7
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 7.2.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: ow65gtcqgjnkumr3iohqjmkdccrz455n
+- zlib:
+    version: 1.2.11
+    arch:
+      platform: linux
+      platform_os: rhel7
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 7.2.0
+    namespace: builtin
+    parameters:
+      optimize: true
+      pic: true
+      shared: true
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: lafowlwsuzr7ukxa7pfjd5afe42gulfx
+

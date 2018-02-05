@@ -1,0 +1,22 @@
+spec:
+- jemalloc:
+    version: 4.5.0
+    arch:
+      platform: linux
+      platform_os: rhel7
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 4.8.5
+    namespace: builtin
+    parameters:
+      prof: false
+      stats: false
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: nrlun2lef5l4ewi37jv3e7znkwk2ne2n
+

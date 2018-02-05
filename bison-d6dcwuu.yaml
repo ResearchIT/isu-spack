@@ -1,0 +1,73 @@
+spec:
+- bison:
+    version: 3.0.4
+    arch:
+      platform: linux
+      platform_os: rhel7
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 4.8.5
+    namespace: builtin
+    parameters:
+      patches:
+      - b72914fe38e54a6fc25f29019e0a0786705c4f61ce20d414cc2010c8d62448c7
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      m4:
+        hash: wa6bwfupaxwa3udh4j5tua3arfjjiuqz
+        type:
+        - build
+        - run
+    hash: d6dcwuuxumptghk2z5ohgpmzyvc3hc5t
+- m4:
+    version: 1.4.18
+    arch:
+      platform: linux
+      platform_os: rhel7
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 4.8.5
+    namespace: builtin
+    parameters:
+      patches:
+      - 3877ab548f88597ab2327a2230ee048d2d07ace1062efe81fc92e91b7f39cd00
+      sigsegv: true
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      libsigsegv:
+        hash: 3byxblkv2nvzumj3wk5cbzyud5hpjdlv
+        type:
+        - build
+        - link
+    hash: wa6bwfupaxwa3udh4j5tua3arfjjiuqz
+- libsigsegv:
+    version: '2.11'
+    arch:
+      platform: linux
+      platform_os: rhel7
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 4.8.5
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: 3byxblkv2nvzumj3wk5cbzyud5hpjdlv
+

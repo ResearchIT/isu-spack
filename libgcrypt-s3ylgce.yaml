@@ -1,0 +1,44 @@
+spec:
+- libgcrypt:
+    version: 1.8.1
+    arch:
+      platform: linux
+      platform_os: rhel7
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 7.2.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      libgpg-error:
+        hash: bs27cmtdcy3ecz3hndlbapvknfcc4t75
+        type:
+        - build
+        - link
+    hash: s3ylgcedqctki6rji3xxviov7ag7epht
+- libgpg-error:
+    version: '1.27'
+    arch:
+      platform: linux
+      platform_os: rhel7
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 7.2.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: bs27cmtdcy3ecz3hndlbapvknfcc4t75
+

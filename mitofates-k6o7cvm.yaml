@@ -1,0 +1,44 @@
+spec:
+- mitofates:
+    version: '1.2'
+    arch:
+      platform: linux
+      platform_os: rhel7
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 7.2.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      libsvm:
+        hash: nkgqblqhyahhufhfznrkfj7cdfaagaum
+        type:
+        - build
+        - link
+    hash: k6o7cvm3mnpchyxq6u4agfy4jots62qx
+- libsvm:
+    version: '322'
+    arch:
+      platform: linux
+      platform_os: rhel7
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 7.2.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: nkgqblqhyahhufhfznrkfj7cdfaagaum
+

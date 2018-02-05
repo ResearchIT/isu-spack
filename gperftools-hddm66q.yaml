@@ -1,0 +1,44 @@
+spec:
+- gperftools:
+    version: '2.4'
+    arch:
+      platform: linux
+      platform_os: rhel7
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 4.8.5
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      libunwind:
+        hash: wiabe6r26b4p23v24bmwamshyhbv3fnf
+        type:
+        - build
+        - link
+    hash: hddm66qs6ordki3lpum4xgjnjgzbxbaa
+- libunwind:
+    version: '1.1'
+    arch:
+      platform: linux
+      platform_os: rhel7
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 4.8.5
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: wiabe6r26b4p23v24bmwamshyhbv3fnf
+
