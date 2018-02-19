@@ -1,0 +1,20 @@
+spec:
+- soapdenovo2:
+    version: '240'
+    arch:
+      platform: linux
+      platform_os: rhel7
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 7.2.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: gnpnuf3rvi7xtjtud35op6ydjz2l5l6y
+
