@@ -23,16 +23,16 @@ spec:
         - build
         - link
       perl:
-        hash: o2jknxxsqp3ahlrhndaeubpz6spnbrpz
+        hash: qsdykvxhvzbv6g3ueb3fjxepmfez7nfb
         type:
         - build
         - run
       samtools:
-        hash: tpb2c5cm4hrpv4it2jcq2ool4wfgtnsb
+        hash: o2ogcmchiv5yuzjaljzd4trew5owbcug
         type:
         - build
         - link
-    hash: 47i232ez3amvqf7gaefmwch4hulkakpc
+    hash: 37ig4um7zc7rfwgpyqkazqr5yn76pc6e
 - bowtie:
     version: '1.2'
     arch:
@@ -73,11 +73,11 @@ spec:
       ldlibs: []
     dependencies:
       gdbm:
-        hash: lhy6gatmcg4xbocmeeyyvebnkjt7qp35
+        hash: h7diufda7zjxojsnmp54bozje34epgs7
         type:
         - build
         - link
-    hash: o2jknxxsqp3ahlrhndaeubpz6spnbrpz
+    hash: qsdykvxhvzbv6g3ueb3fjxepmfez7nfb
 - gdbm:
     version: '1.13'
     arch:
@@ -97,11 +97,11 @@ spec:
       ldlibs: []
     dependencies:
       readline:
-        hash: pf63r2autuwgeqapsyik3b3phtiqblmn
+        hash: ou7ogio6agwodro5kus5axziw7dpa2tj
         type:
         - build
         - link
-    hash: lhy6gatmcg4xbocmeeyyvebnkjt7qp35
+    hash: h7diufda7zjxojsnmp54bozje34epgs7
 - readline:
     version: '7.0'
     arch:
@@ -121,11 +121,11 @@ spec:
       ldlibs: []
     dependencies:
       ncurses:
-        hash: 4v63qrrom3gfcqvmna36k32l3yvg2cmz
+        hash: lb4od47elua2gqnny6lbfwma2onnjiat
         type:
         - build
         - link
-    hash: pf63r2autuwgeqapsyik3b3phtiqblmn
+    hash: ou7ogio6agwodro5kus5axziw7dpa2tj
 - ncurses:
     version: '6.0'
     arch:
@@ -141,13 +141,14 @@ spec:
       - 4110a40613b800da2b2888c352b64c75a82809d48341061e4de5861e8b28423f
       - f84b2708a42777aadcc7f502a261afe10ca5646a51c1ef8b5e60d2070d926b57
       symlinks: false
+      termlib: false
       cflags: []
       cppflags: []
       cxxflags: []
       fflags: []
       ldflags: []
       ldlibs: []
-    hash: 4v63qrrom3gfcqvmna36k32l3yvg2cmz
+    hash: lb4od47elua2gqnny6lbfwma2onnjiat
 - samtools:
     version: '1.6'
     arch:
@@ -172,11 +173,11 @@ spec:
         - build
         - link
       ncurses:
-        hash: 4v63qrrom3gfcqvmna36k32l3yvg2cmz
+        hash: lb4od47elua2gqnny6lbfwma2onnjiat
         type:
         - build
         - link
-    hash: tpb2c5cm4hrpv4it2jcq2ool4wfgtnsb
+    hash: o2ogcmchiv5yuzjaljzd4trew5owbcug
 - htslib:
     version: '1.6'
     arch:
