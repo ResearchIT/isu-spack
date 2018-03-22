@@ -1,0 +1,43 @@
+spec:
+- picard:
+    version: 2.17.0
+    arch:
+      platform: linux
+      platform_os: rhel7
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 4.8.5
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      jdk:
+        hash: xf726oexvlbuuj37eq3nd5gxznedbzkh
+        type:
+        - run
+    hash: ft5qztzntoymuxiqt3b6yi6uqcmgzmds
+- jdk:
+    version: 8u141-b15
+    arch:
+      platform: linux
+      platform_os: rhel7
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 4.8.5
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: xf726oexvlbuuj37eq3nd5gxznedbzkh
+

@@ -1,0 +1,20 @@
+spec:
+- apr:
+    version: 1.6.2
+    arch:
+      platform: linux
+      platform_os: rhel7
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 4.8.5
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: 7t44yummzf37d24qjnmyb6ovuveqam7j
+

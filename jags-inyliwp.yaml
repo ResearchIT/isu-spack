@@ -1,0 +1,52 @@
+spec:
+- jags:
+    version: 4.2.0
+    arch:
+      platform: linux
+      platform_os: rhel7
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 4.8.5
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      openblas:
+        hash: jj2xj3gvp3zg67ovr6atjjkhoy7locxg
+        type:
+        - build
+        - link
+    hash: inyliwp5ofuwqyq7rnxdgbs6df2tdj5c
+- openblas:
+    version: 0.2.20
+    arch:
+      platform: linux
+      platform_os: rhel7
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 4.8.5
+    namespace: builtin
+    parameters:
+      cpu_target: ''
+      ilp64: false
+      patches:
+      - 47cfa7a952ac7b2e4632c73ae199d69fb54490627b66a62c681e21019c4ddc9d
+      pic: true
+      shared: true
+      threads: none
+      virtual_machine: false
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: jj2xj3gvp3zg67ovr6atjjkhoy7locxg
+

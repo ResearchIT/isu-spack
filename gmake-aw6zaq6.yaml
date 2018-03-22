@@ -1,0 +1,21 @@
+spec:
+- gmake:
+    version: 4.2.1
+    arch:
+      platform: linux
+      platform_os: rhel7
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 4.8.5
+    namespace: builtin
+    parameters:
+      guile: false
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: aw6zaq63a47tmuvlwfcm3trnhlyhaspx
+

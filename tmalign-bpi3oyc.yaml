@@ -1,0 +1,20 @@
+spec:
+- tmalign:
+    version: '2016-05-25'
+    arch:
+      platform: linux
+      platform_os: rhel7
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 4.8.5
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: bpi3oycbrfoo2s6zc2hnmquwlbvgocuy
+

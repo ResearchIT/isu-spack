@@ -1,0 +1,21 @@
+spec:
+- pkg-config:
+    version: 0.29.2
+    arch:
+      platform: linux
+      platform_os: rhel7
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 4.8.5
+    namespace: builtin
+    parameters:
+      internal_glib: true
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: ovuu7curwnaicby3lgtvruypuaiwagrf
+

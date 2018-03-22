@@ -1,0 +1,935 @@
+spec:
+- falcon:
+    version: '2017-05-30'
+    arch:
+      platform: linux
+      platform_os: rhel7
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 4.8.5
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      pacbio-daligner:
+        hash: 3lb6sakp6cxs6gm7bsxdra4zyr2545hg
+        type:
+        - run
+      pacbio-damasker:
+        hash: vjyauu5ck3dzjac5ldq5jmdr4ec3e53s
+        type:
+        - run
+      pacbio-dazz-db:
+        hash: 2sdncjqux36iedps36ncser5ihyirpcr
+        type:
+        - run
+      pacbio-dextractor:
+        hash: vv666vcd2vwwmiauqykxc6hvpylw4auv
+        type:
+        - run
+      py-networkx:
+        hash: 2rrvpu6y7l3nc4f7bvnauh5622w54xlm
+        type:
+        - build
+        - run
+      py-pypeflow:
+        hash: jgb47wxvrsne7tbjjrn6vjoonzbrszpi
+        type:
+        - run
+      py-setuptools:
+        hash: hqrsjffa7w5tili7vz5yriauo7dzwole
+        type:
+        - run
+      python:
+        hash: v7ateyhh24yj3sl3fd62d66mbr53mw7d
+        type:
+        - build
+        - link
+        - run
+    hash: 3zov3j55cwdskpzir5bz4g5kaoxh4v7k
+- pacbio-daligner:
+    version: '2017-08-05'
+    arch:
+      platform: linux
+      platform_os: rhel7
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 4.8.5
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      pacbio-dazz-db:
+        hash: 2sdncjqux36iedps36ncser5ihyirpcr
+        type:
+        - build
+        - link
+    hash: 3lb6sakp6cxs6gm7bsxdra4zyr2545hg
+- pacbio-dazz-db:
+    version: '2017-04-10'
+    arch:
+      platform: linux
+      platform_os: rhel7
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 4.8.5
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: 2sdncjqux36iedps36ncser5ihyirpcr
+- pacbio-damasker:
+    version: '2017-02-11'
+    arch:
+      platform: linux
+      platform_os: rhel7
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 4.8.5
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: vjyauu5ck3dzjac5ldq5jmdr4ec3e53s
+- pacbio-dextractor:
+    version: '2016-08-09'
+    arch:
+      platform: linux
+      platform_os: rhel7
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 4.8.5
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      hdf5:
+        hash: akgrqz7fdxz2dlb7k7dku3d2fov4dvj5
+        type:
+        - build
+        - link
+    hash: vv666vcd2vwwmiauqykxc6hvpylw4auv
+- hdf5:
+    version: 1.10.1
+    arch:
+      platform: linux
+      platform_os: rhel7
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 4.8.5
+    namespace: builtin
+    parameters:
+      cxx: false
+      debug: false
+      fortran: false
+      hl: false
+      mpi: true
+      pic: true
+      shared: true
+      szip: false
+      threadsafe: false
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      openmpi:
+        hash: hjmmn2l75pjhqtgbohgwirlg4tlw7xmn
+        type:
+        - build
+        - link
+      zlib:
+        hash: vhzh5cfaki5lx5sjuth5iuojq5azdkbd
+        type:
+        - build
+        - link
+    hash: akgrqz7fdxz2dlb7k7dku3d2fov4dvj5
+- openmpi:
+    version: 3.0.0
+    arch:
+      platform: linux
+      platform_os: rhel7
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 4.8.5
+    namespace: builtin
+    parameters:
+      cuda: true
+      fabrics:
+      - libfabric
+      java: false
+      schedulers:
+      - slurm
+      sqlite3: false
+      thread_multiple: false
+      vt: true
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      hwloc:
+        hash: msyhlx64f7orwnxxf6b7qfn2tf5vvdm4
+        type:
+        - build
+        - link
+      libfabric:
+        hash: tdx4w3vb6bys7dkorqirpadbryd5kkwb
+        type:
+        - build
+        - link
+      numactl:
+        hash: d5tronvxnup7osbycv63jnrvouqxaq2p
+        type:
+        - build
+        - link
+    hash: hjmmn2l75pjhqtgbohgwirlg4tlw7xmn
+- hwloc:
+    version: 1.11.8
+    arch:
+      platform: linux
+      platform_os: rhel7
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 4.8.5
+    namespace: builtin
+    parameters:
+      cuda: true
+      libxml2: true
+      pci: true
+      shared: true
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      cuda:
+        hash: dli2pwjtvlfu3ocjaa6zroqbkn2rjprh
+        type:
+        - build
+        - link
+      libpciaccess:
+        hash: qxhgslwm6jw2pbdi4klf645uuwmgrk2g
+        type:
+        - build
+        - link
+      libxml2:
+        hash: 7x5vwihfey2ury7gapd3xqjelyyoxb3q
+        type:
+        - build
+        - link
+    hash: msyhlx64f7orwnxxf6b7qfn2tf5vvdm4
+- cuda:
+    version: 9.1.85
+    arch:
+      platform: linux
+      platform_os: rhel7
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 4.8.5
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: dli2pwjtvlfu3ocjaa6zroqbkn2rjprh
+- libpciaccess:
+    version: 0.13.5
+    arch:
+      platform: linux
+      platform_os: rhel7
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 4.8.5
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: qxhgslwm6jw2pbdi4klf645uuwmgrk2g
+- libxml2:
+    version: 2.9.4
+    arch:
+      platform: linux
+      platform_os: rhel7
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 4.8.5
+    namespace: builtin
+    parameters:
+      python: false
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      xz:
+        hash: yxhjznhbx2nud4c5pxnsh4wsvwyzfd7v
+        type:
+        - build
+        - link
+      zlib:
+        hash: vhzh5cfaki5lx5sjuth5iuojq5azdkbd
+        type:
+        - build
+        - link
+    hash: 7x5vwihfey2ury7gapd3xqjelyyoxb3q
+- xz:
+    version: 5.2.3
+    arch:
+      platform: linux
+      platform_os: rhel7
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 4.8.5
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: yxhjznhbx2nud4c5pxnsh4wsvwyzfd7v
+- zlib:
+    version: 1.2.11
+    arch:
+      platform: linux
+      platform_os: rhel7
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 4.8.5
+    namespace: builtin
+    parameters:
+      optimize: true
+      pic: true
+      shared: true
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: vhzh5cfaki5lx5sjuth5iuojq5azdkbd
+- libfabric:
+    version: 1.5.3
+    arch:
+      platform: linux
+      platform_os: rhel7
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 4.8.5
+    namespace: builtin
+    parameters:
+      fabrics:
+      - psm
+      - psm2
+      - sockets
+      - udp
+      - verbs
+      spackfabrics: true
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      opa-psm2:
+        hash: jyw65r7x7jkddq3ecbjaaimpn6kugbp5
+        type:
+        - build
+        - link
+      psm:
+        hash: qxuq6twbds3trxsppa4yvcet7iacupur
+        type:
+        - build
+        - link
+      rdma-core:
+        hash: wwgwvxdgnvgh5uv3jdylmvhnb5wopv3k
+        type:
+        - build
+        - link
+    hash: tdx4w3vb6bys7dkorqirpadbryd5kkwb
+- opa-psm2:
+    version: 10.3-37
+    arch:
+      platform: linux
+      platform_os: rhel7
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 4.8.5
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      numactl:
+        hash: d5tronvxnup7osbycv63jnrvouqxaq2p
+        type:
+        - build
+        - link
+    hash: jyw65r7x7jkddq3ecbjaaimpn6kugbp5
+- numactl:
+    version: 2.0.11
+    arch:
+      platform: linux
+      platform_os: rhel7
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 4.8.5
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: d5tronvxnup7osbycv63jnrvouqxaq2p
+- psm:
+    version: '2017-04-28'
+    arch:
+      platform: linux
+      platform_os: rhel7
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 4.8.5
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      libuuid:
+        hash: n4dikzcgyv5u44zgq23gf5z7vuv4xn7d
+        type:
+        - build
+        - link
+    hash: qxuq6twbds3trxsppa4yvcet7iacupur
+- libuuid:
+    version: 1.0.3
+    arch:
+      platform: linux
+      platform_os: rhel7
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 4.8.5
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: n4dikzcgyv5u44zgq23gf5z7vuv4xn7d
+- rdma-core:
+    version: '13'
+    arch:
+      platform: linux
+      platform_os: rhel7
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 4.8.5
+    namespace: builtin
+    parameters:
+      build_type: RelWithDebInfo
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      libnl:
+        hash: dy57k3zwutomyvoykr34rcxwen3yorov
+        type:
+        - build
+        - link
+    hash: wwgwvxdgnvgh5uv3jdylmvhnb5wopv3k
+- libnl:
+    version: 3.3.0
+    arch:
+      platform: linux
+      platform_os: rhel7
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 4.8.5
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: dy57k3zwutomyvoykr34rcxwen3yorov
+- py-networkx:
+    version: '1.10'
+    arch:
+      platform: linux
+      platform_os: rhel7
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 4.8.5
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      py-decorator:
+        hash: y3mbrvlqty5gmsfrfzk5i42z6wiv22ia
+        type:
+        - build
+        - run
+      python:
+        hash: v7ateyhh24yj3sl3fd62d66mbr53mw7d
+        type:
+        - build
+        - link
+        - run
+    hash: 2rrvpu6y7l3nc4f7bvnauh5622w54xlm
+- py-decorator:
+    version: 4.0.9
+    arch:
+      platform: linux
+      platform_os: rhel7
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 4.8.5
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      python:
+        hash: v7ateyhh24yj3sl3fd62d66mbr53mw7d
+        type:
+        - build
+        - link
+        - run
+    hash: y3mbrvlqty5gmsfrfzk5i42z6wiv22ia
+- python:
+    version: 2.7.14
+    arch:
+      platform: linux
+      platform_os: rhel7
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 4.8.5
+    namespace: builtin
+    parameters:
+      patches:
+      - 123082ab3483ded78e86d7c809e98a804b3465b4683c96bd79a2fd799f572244
+      pic: true
+      shared: true
+      tk: false
+      ucs4: false
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      bzip2:
+        hash: qrd3gzlkqpof6jthkmt2vejxvmbd3x3s
+        type:
+        - build
+        - link
+      ncurses:
+        hash: 3ncf3bbhwsoyc7y7o23la6uattguceyh
+        type:
+        - build
+        - link
+      openssl:
+        hash: ycmyhhj7tgr7ydfvf4avcmvyaa6u2vt7
+        type:
+        - build
+        - link
+      readline:
+        hash: jushdjvj53ewqwsutl6nx6ggwqhs73sq
+        type:
+        - build
+        - link
+      sqlite:
+        hash: 7bttd2ha5llexnmjv5l7lr2dqptt6bhf
+        type:
+        - build
+        - link
+      zlib:
+        hash: vhzh5cfaki5lx5sjuth5iuojq5azdkbd
+        type:
+        - build
+        - link
+    hash: v7ateyhh24yj3sl3fd62d66mbr53mw7d
+- bzip2:
+    version: 1.0.6
+    arch:
+      platform: linux
+      platform_os: rhel7
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 4.8.5
+    namespace: builtin
+    parameters:
+      shared: true
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: qrd3gzlkqpof6jthkmt2vejxvmbd3x3s
+- ncurses:
+    version: '6.0'
+    arch:
+      platform: linux
+      platform_os: rhel7
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 4.8.5
+    namespace: builtin
+    parameters:
+      patches:
+      - f84b2708a42777aadcc7f502a261afe10ca5646a51c1ef8b5e60d2070d926b57
+      symlinks: false
+      termlib: false
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: 3ncf3bbhwsoyc7y7o23la6uattguceyh
+- openssl:
+    version: 1.0.2n
+    arch:
+      platform: linux
+      platform_os: rhel7
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 4.8.5
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      zlib:
+        hash: vhzh5cfaki5lx5sjuth5iuojq5azdkbd
+        type:
+        - build
+        - link
+    hash: ycmyhhj7tgr7ydfvf4avcmvyaa6u2vt7
+- readline:
+    version: '7.0'
+    arch:
+      platform: linux
+      platform_os: rhel7
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 4.8.5
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      ncurses:
+        hash: 3ncf3bbhwsoyc7y7o23la6uattguceyh
+        type:
+        - build
+        - link
+    hash: jushdjvj53ewqwsutl6nx6ggwqhs73sq
+- sqlite:
+    version: 3.21.0
+    arch:
+      platform: linux
+      platform_os: rhel7
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 4.8.5
+    namespace: builtin
+    parameters:
+      patches:
+      - 5bbcba091045e547eb550e6e9b9372009c41be0a9de8a5c030d03361c11ff939
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      readline:
+        hash: jushdjvj53ewqwsutl6nx6ggwqhs73sq
+        type:
+        - build
+        - link
+    hash: 7bttd2ha5llexnmjv5l7lr2dqptt6bhf
+- py-pypeflow:
+    version: '2017-05-04'
+    arch:
+      platform: linux
+      platform_os: rhel7
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 4.8.5
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      py-networkx:
+        hash: 2rrvpu6y7l3nc4f7bvnauh5622w54xlm
+        type:
+        - build
+        - run
+      python:
+        hash: v7ateyhh24yj3sl3fd62d66mbr53mw7d
+        type:
+        - build
+        - link
+        - run
+    hash: jgb47wxvrsne7tbjjrn6vjoonzbrszpi
+- py-setuptools:
+    version: 35.0.2
+    arch:
+      platform: linux
+      platform_os: rhel7
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 4.8.5
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      py-appdirs:
+        hash: 7xswwkivkpv7rorideuuiejbvpt4ge6c
+        type:
+        - build
+        - run
+      py-packaging:
+        hash: sp4wome474ckaoguph72ynm5toqqbmpa
+        type:
+        - build
+        - run
+      py-six:
+        hash: u5uwy5o5xrjx6mycor72nbfikscvsnhl
+        type:
+        - build
+        - run
+      python:
+        hash: v7ateyhh24yj3sl3fd62d66mbr53mw7d
+        type:
+        - build
+        - link
+        - run
+    hash: hqrsjffa7w5tili7vz5yriauo7dzwole
+- py-appdirs:
+    version: 1.4.3
+    arch:
+      platform: linux
+      platform_os: rhel7
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 4.8.5
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      python:
+        hash: v7ateyhh24yj3sl3fd62d66mbr53mw7d
+        type:
+        - build
+        - link
+        - run
+    hash: 7xswwkivkpv7rorideuuiejbvpt4ge6c
+- py-packaging:
+    version: '16.8'
+    arch:
+      platform: linux
+      platform_os: rhel7
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 4.8.5
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      py-pyparsing:
+        hash: 6cmlimokwy6pvuvupi3w2lcxsypnhmdv
+        type:
+        - run
+      py-six:
+        hash: u5uwy5o5xrjx6mycor72nbfikscvsnhl
+        type:
+        - run
+      python:
+        hash: v7ateyhh24yj3sl3fd62d66mbr53mw7d
+        type:
+        - build
+        - link
+        - run
+    hash: sp4wome474ckaoguph72ynm5toqqbmpa
+- py-pyparsing:
+    version: 2.2.0
+    arch:
+      platform: linux
+      platform_os: rhel7
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 4.8.5
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      python:
+        hash: v7ateyhh24yj3sl3fd62d66mbr53mw7d
+        type:
+        - build
+        - link
+        - run
+    hash: 6cmlimokwy6pvuvupi3w2lcxsypnhmdv
+- py-six:
+    version: 1.10.0
+    arch:
+      platform: linux
+      platform_os: rhel7
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 4.8.5
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      python:
+        hash: v7ateyhh24yj3sl3fd62d66mbr53mw7d
+        type:
+        - build
+        - link
+        - run
+    hash: u5uwy5o5xrjx6mycor72nbfikscvsnhl
+

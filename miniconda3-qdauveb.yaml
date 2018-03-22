@@ -1,0 +1,20 @@
+spec:
+- miniconda3:
+    version: 4.3.30
+    arch:
+      platform: linux
+      platform_os: rhel7
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 4.8.5
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: qdauvebbhrjaevrgwkt2wples4psz4w7
+
