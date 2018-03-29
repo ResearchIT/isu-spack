@@ -1,0 +1,1 @@
+zeromq@4.2.2%gcc@4.8.5 arch=linux-rhel7-x86_64 ^libsodium@1.0.15%gcc@4.8.5 arch=linux-rhel7-x86_64 

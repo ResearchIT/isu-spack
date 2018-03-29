@@ -1,0 +1,1 @@
+picard@2.17.0%gcc@4.8.5 arch=linux-rhel7-x86_64 ^jdk@8u141-b15%gcc@4.8.5 arch=linux-rhel7-x86_64 

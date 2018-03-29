@@ -1,0 +1,1 @@
+dmlc-core@20170508%gcc@4.8.5 build_type=RelWithDebInfo +openmp patches=b5383858c1b1dec2b2dfcb46bf0b1c7c3e25ccab26e369a06fbe3d2c0eec26b4 arch=linux-rhel7-x86_64 

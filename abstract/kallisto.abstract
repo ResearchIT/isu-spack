@@ -1,0 +1,1 @@
+kallisto@0.43.1%gcc@4.8.5 build_type=RelWithDebInfo arch=linux-rhel7-x86_64 ^hdf5@1.10.1%gcc@4.8.5~cxx~debug~fortran~hl+mpi+pic+shared~szip~threadsafe arch=linux-rhel7-x86_64 ^mpich@3.2%gcc@4.8.5 device=ch3 +hydra netmod=tcp +pmi+romio~verbs arch=linux-rhel7-x86_64 ^zlib@1.2.11%gcc@4.8.5+optimize+pic+shared arch=linux-rhel7-x86_64 

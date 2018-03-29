@@ -1,0 +1,1 @@
+qhull@2015.2%gcc@4.8.5 build_type=RelWithDebInfo patches=10ddc62a1600b0ede23fb0502e29dca389d18689fd8dfe7a849e3a989c0e607e arch=linux-rhel7-x86_64 

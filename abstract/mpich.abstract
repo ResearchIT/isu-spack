@@ -1,0 +1,1 @@
+mpich@3.2%gcc@4.8.5 device=ch3 +hydra netmod=tcp +pmi+romio~verbs arch=linux-rhel7-x86_64 

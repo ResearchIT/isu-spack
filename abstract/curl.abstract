@@ -1,0 +1,1 @@
+curl@7.56.0%gcc@4.8.5~nghttp2 arch=linux-rhel7-x86_64 ^openssl@1.0.2n%gcc@4.8.5 arch=linux-rhel7-x86_64 ^zlib@1.2.11%gcc@4.8.5+optimize+pic+shared arch=linux-rhel7-x86_64 

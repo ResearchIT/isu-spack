@@ -1,0 +1,1 @@
+snappy@1.1.7%gcc@4.8.5 build_type=RelWithDebInfo +shared arch=linux-rhel7-x86_64 

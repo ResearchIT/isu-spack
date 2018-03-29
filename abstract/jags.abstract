@@ -1,0 +1,1 @@
+jags@4.2.0%gcc@4.8.5 arch=linux-rhel7-x86_64 ^openblas@0.2.20%gcc@4.8.5 cpu_target= ~ilp64 patches=47cfa7a952ac7b2e4632c73ae199d69fb54490627b66a62c681e21019c4ddc9d +pic+shared threads=none ~virtual_machine arch=linux-rhel7-x86_64 

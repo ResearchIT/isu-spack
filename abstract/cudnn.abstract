@@ -1,0 +1,1 @@
+cudnn@6.0%gcc@4.8.5 arch=linux-rhel7-x86_64 ^cuda@9.1.85%gcc@4.8.5 arch=linux-rhel7-x86_64 

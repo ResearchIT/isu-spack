@@ -1,0 +1,1 @@
+libxslt@1.1.29%gcc@4.8.5+crypto arch=linux-rhel7-x86_64 ^libgcrypt@1.8.1%gcc@4.8.5 arch=linux-rhel7-x86_64 ^libgpg-error@1.27%gcc@4.8.5 arch=linux-rhel7-x86_64 ^libiconv@1.15%gcc@4.8.5 arch=linux-rhel7-x86_64 ^libxml2@2.9.4%gcc@4.8.5~python arch=linux-rhel7-x86_64 ^xz@5.2.3%gcc@4.8.5 arch=linux-rhel7-x86_64 ^zlib@1.2.11%gcc@4.8.5+optimize+pic+shared arch=linux-rhel7-x86_64 
