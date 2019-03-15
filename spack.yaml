@@ -17,11 +17,10 @@ spack:
   - arlecore
   - aspera-cli
   - astral
-  - atk
   - atlas
   - augustus
   - autofact
-  - bambam
+  # - bambam #not merged yet https://github.com/spack/spack/pull/9792
   - bamtools
   - bamutil 
   - bazel 
@@ -50,7 +49,7 @@ spack:
   - bsseeker2
   - bucky
   - busco
-  - butter
+  - butter ^bowtie%gcc@7.4.0
   - bwa
   - canu
   - cap3
@@ -934,6 +933,12 @@ spack:
         read: world
         write: user
 
+    aegean:
+      compiler: [gcc@6.5.0]
+    allpaths-lg:
+      compiler: [gcc@4.8.5]
+    bowtie:
+      compiler: [gcc@7.4.0]
     cgal:
       variants:  +demos+imageio
     charmpp:
@@ -952,8 +957,6 @@ spack:
       compiler: [gcc@8.3.0]
     gcc@6.5.0:
       compiler: [gcc@8.3.0]
-    genometools:
-      compiler: [gcc@6.5.0]
     gmap-gsnap:
       variants: simd=sse2,sse42,avx2,avx512
     lammps:
