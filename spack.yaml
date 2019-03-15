@@ -1085,7 +1085,7 @@ spack:
             
   packages: 
     all:
-      compiler: [gcc@8.3.0, gcc@7.4.0, gcc@4.9.4]
+      compiler: [gcc@8.3.0, gcc@7.4.0, gcc@6.5.0, gcc@4.9.4]
       providers:
         blas: [openblas]
         golang: [gcc]
@@ -1094,7 +1094,9 @@ spack:
         mpi: [openmpi]
         pil: [py-pillow]
         scalapack: [netlib-scalapack]
-  
+    genometools:
+      compiler: [gcc@6.5.0]
+
   repos: []
 
   config: {}
