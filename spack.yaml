@@ -1061,42 +1061,39 @@ spack:
   - zlib
   - zsh
 
-  modules: {
+  modules: 
     enable:
       - lmod
     lmod:
-    core_compilers:
-      - 'gcc@4.8.5'
-    all:
-      autoload: 'direct'
-      suffixes:
-        ^python@2.0:2.99: 'py2'
-        ^python@3.0:3.99: 'py3'
-        ^r@3.1: 'r3.1'
-        ^r@3.2: 'r3.2'
-        ^r@3.3: 'r3.3'
-        ^r@3.4: 'r3.4'
-        ^r@3.5: 'r3.5'
-        ^cuda@8.0:8.9: 'cuda8'
-        ^cuda@9.0:9.9: 'cuda9'
-        ^openmpi@2: 'openmpi2'
-        ^openmpi@3: 'openmpi3'
-        ^mpich: 'mpich'
-    hierarchy:
-        - None
-  }
+      core_compilers:
+        - 'gcc@4.8.5'
+      all:
+        autoload: 'direct'
+        suffixes:
+          ^python@2.0:2.99: 'py2'
+          ^python@3.0:3.99: 'py3'
+          ^r@3.4.4: 'r3.4.4'
+          ^r@3.5.2: 'r3.5.2'
+          ^cuda@8.0:8.9: 'cuda8'
+          ^cuda@9.0:9.9: 'cuda9'
+          ^openmpi@2: 'openmpi2'
+          ^openmpi@3: 'openmpi3'
+          ^mpich: 'mpich'
+          ^mvapich2: 'mvapich2'
+      hierarchy:
+          - None
             
   packages: 
     all:
-    compiler: [gcc@4.8.5, gcc@7.4.0]
-    providers:
-      blas: [openblas]
-      golang: [gcc]
-      lapack: [openblas]
-      mkl: [intel-mkl]
-      mpi: [openmpi]
-      pil: [py-pillow]
-      scalapack: [netlib-scalapack]
+      compiler: [gcc@8.3.0, gcc@7.4.0, gcc@4.9.4]
+      providers:
+        blas: [openblas]
+        golang: [gcc]
+        lapack: [openblas]
+        mkl: [intel-mkl]
+        mpi: [openmpi]
+        pil: [py-pillow]
+        scalapack: [netlib-scalapack]
   
   repos: []
 
