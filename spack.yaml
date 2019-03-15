@@ -1,0 +1,1105 @@
+spack:
+  specs: 
+  - abyss maxk=0
+  - abyss maxk=64
+  - abyss maxk=128
+  - aegean
+  - albert
+  - alglib
+  - allpaths-lg
+  - alsa-lib
+  - ampliconnoise
+  - andi
+  - angsd
+  - ant
+  - aperture-photometry
+  - arlecore
+  - aspera-cli
+  - astral
+  - atk
+  - atlas threads=none
+  - augustus
+  - autoconf
+  - autofact
+  - automake
+  - bambam
+  - bamtools
+  - bamutil 
+  - bazel 
+  - bbmap
+  - bcftools
+  - bcl2fastq2 
+  - beast1
+  - beast2
+  - beast-tracer
+  - bedops
+  - bedtools2
+  - binutils  ~plugins
+  - bioawk
+  - bison 
+  - blast2go
+  - blast-legacy
+  - blast-plus  +pcre+perl+png+python~static+zlib
+  - blat
+  - boost
+  - bowtie
+  - bowtie2
+  - bowtie2 
+  - bpp-core build_type=RelWithDebInfo
+  - bpp-phyl build_type=RelWithDebInfo
+  - bpp-seq build_type=RelWithDebInfo
+  - bpp-suite build_type=RelWithDebInfo
+  - braker
+  - breakdancer build_type=RelWithDebInfo
+  - bridger
+  - bsseeker2
+  - bucky
+  - busco
+  - butter
+  - bwa
+  - bzip2
+  - cairo
+  - canu
+  - cap3
+  - casper
+  - cdbfasta
+  - cdhit
+  - cdo grib2=eccodes +hdf5+libxml2~magics+netcdf+openmp+proj+szip+udunits2
+  - cfitsio
+  - cgal build_type=Release ~core+demos~imageio+shared
+  - charm backend=mpi ~papi  +shared+smp~tcp
+  - chlorop 
+  - circos
+  - cistem
+  - cleaveland4
+  - clustalo
+  - clustalw
+  - cmake
+  - cmake  ~qt
+  - compositeproto
+  - corset
+  - cub
+  - cuda
+  - cudnn
+  - cufflinks
+  - cups
+  - curl
+  - damageproto
+  - dbus
+  - dealii build_type=DebugRelease ~cuda cuda_arch= ~doc+gmsh+gsl+hdf5~int64+metis+mpi+muparser+nanoflann+netcdf+oce~optflags+p4est+petsc~python+scalapack+slepc+sundials+trilinos
+  - delly2
+  - dialign-tx
+  - diamond build_type=RelWithDebInfo
+  - discovar
+  - discovardenovo
+  - dmlc-core build_type=RelWithDebInfo +openmp 
+  - ea-utils
+  - eigen build_type=RelWithDebInfo +fftw+metis+mpfr+scotch+suitesparse
+  - emboss
+  - energyplus
+  - esmf  +pio+pnetcdf+xerces
+  - exabayes
+  - exonerate
+  - expat
+  - express build_type=RelWithDebInfo
+  - falcon
+  - fast-gbs
+  - fastme
+  - fastphase
+  - fastqc 
+  - fastq-screen
+  - fastqvalidator
+  - fasttree
+  - fastx-toolkit
+  - fermi
+  - fermikit
+  - fermisciencetools
+  - ffmpeg
+  - "fftw simd=avx,avx2,sse2"
+  - fimpute
+  - fixesproto
+  - flex
+  - fltk  +shared
+  - fontconfig
+  - font-util
+  - fpc
+  - freebayes
+  - freeglut build_type=RelWithDebInfo
+  - freetype
+  - fsl
+  - gapcloser
+  - gapfiller
+  - gatk
+  - gawk
+  - gblocks
+  - "gcc languages=c,c++,fortran ~piclibs~strip"
+  - gcta
+  - gdal
+  - gdbm
+  - gdk-pixbuf
+  - genemark-et
+  - genometools
+  - geos
+  - gettext  +tar+xz
+  - gflags build_type=RelWithDebInfo
+  - giflib 
+  - glew
+  - glib 
+  - glog
+  - glpk
+  - glproto
+  - gmake
+  - gmap-gsnap
+  - "gmap-gsnap simd=avx2,sse2,sse42"
+  - gmp
+  - gnuplot  ~pbm~wx
+  - gnutls
+  - gobject-introspection 
+  - gperf
+  - gperftools
+  - gromacs build_type=Release ~cuda~double+mpi+plumed+shared
+  - gromacs build_type=Release +cuda~double+mpi~plumed+shared
+  - gromacs build_type=RelWithDebInfo ~cuda~double~mpi~plumed+shared
+  - gromacs build_type=RelWithDebInfo +cuda~double+mpi~plumed+shared
+  - gsl
+  - gtkplus 
+  - hadoop
+  - hapcut2
+  - hapdip
+  - haploview
+  - harfbuzz
+  - hdf5
+  - help2man
+  - hisat2
+  - hisea
+  - hmmer
+  - hoomd-blue build_type=RelWithDebInfo +cuda~doc~mpi
+  - hoomd-blue build_type=RelWithDebInfo +cuda~doc+mpi
+  - hpl
+  - htslib
+  - hwloc
+  - hybpiper
+  - hyphy build_type=RelWithDebInfo
+  - icu4c
+  - idba
+  - igv
+  - igvtools
+  - image-magick
+  - impute2
+  - infernal
+  - inputproto
+  - intel-mkl-dnn build_type=RelWithDebInfo
+  - intel-mkl threads=none
+  - intel-tbb 
+  - intel-tbb  +shared
+  - intltool
+  - intltool 
+  - isl
+  - itsx
+  - jags
+  - jasper build_type=Release +jpeg~opengl+shared
+  - jasper  +shared
+  - jdk
+  - jellyfish
+  - jemalloc
+  - jq
+  - json-c
+  - julia
+  - k8
+  - kaks-calculator
+  - kallisto build_type=RelWithDebInfo
+  - kbproto
+  - kmergenie
+  - kraken
+  - lammps build_type=RelWithDebInfo +class2+colloid+compress+coreshell+dipole+granular+kspace+latte+lib~manybody+mc+meam+misc+molecule+mpi+mpiio  +peri~poems+python~qeq+reax+replica+rigid+shock+snap+srd~user-atc+user-h5md+user-lb~user-misc+user-netcdf~user-omp~voronoi
+  - last
+  - latte build_type=RelWithDebInfo +mpi~progress+shared
+  - lcms
+  - leveldb
+  - libaio
+  - libbeagle
+  - libbeagle cuda_arch=none
+  - libbsd 
+  - libcerf
+  - libcheck build_type=RelWithDebInfo
+  - libdivsufsort build_type=RelWithDebInfo
+  - libedit
+  - libelf
+  - libevent
+  - "libfabric fabrics=psm,psm2,sockets,udp,verbs"
+  - libffi
+  - libgcrypt
+  - libgd
+  - libgeotiff
+  - libgpg-error
+  - libgpuarray build_type=RelWithDebInfo
+  - libgtextutils 
+  - libice
+  - libiconv
+  - libjpeg
+  - libjpeg-turbo
+  - libmng
+  - libnl
+  - libnova
+  - libpciaccess
+  - libpng
+  - libpthread-stubs
+  - libsigsegv
+  - libsm
+  - libsodium
+  - libsvm
+  - libszip
+  - libtiff
+  - libtool
+  - libunwind
+  - libuuid
+  - libx11
+  - libxau
+  - libxaw
+  - libxcb
+  - libxcomposite
+  - libxdamage
+  - libxdmcp
+  - libxext
+  - libxfixes
+  - libxft
+  - libxi
+  - libxinerama
+  - libxml2
+  - libxmu
+  - libxpm
+  - libxrandr
+  - libxrender
+  - libxshmfence
+  - libxslt
+  - libxt
+  - libxtst
+  - libxv
+  - libxvmc
+  - libzip
+  - linkphase3
+  - llvm build_type=Release +clang+compiler-rt+gold+internal_unwind+libcxx~link_dylib+lld+lldb+polly~python~shared_libs
+  - lmdb
+  - lordec
+  - lz4
+  - lzma
+  - lzo
+  - m4  +sigsegv
+  - mafft
+  - maq
+  - mariadb build_type=RelWithDebInfo +nonblocking
+  - mark
+  - masurca
+  - matlab key=00005-16835-26635-50915-34103-49806-00691-03238-60527-20825-20994-49122-40985-07857-10083-41606-05732-29548-63854-56777-39694-11157 mode=silent
+  - maven
+  - maverick
+  - mcl
+  - mefit
+  - meme
+  - meraculous build_type=RelWithDebInfo
+  - mesa
+  - mesa-glu
+  - metasv
+  - metis build_type=Release ~gdb~int64  ~real64+shared
+  - microbiomeutil
+  - mindthegap build_type=RelWithDebInfo
+  - miniasm
+  - miniconda2
+  - miniconda3
+  - minimap2
+  - mirdeep
+  - mitofates
+  - mitofates 
+  - mlhka
+  - mothur
+  - mpc
+  - mpest
+  - mpfr 
+  - mpich device=ch3 +hydra netmod=ofi +pmi+romio~verbs
+  - mpich device=ch3 +hydra netmod=tcp +pmi+romio~verbs
+  - msgpack-c build_type=RelWithDebInfo
+  - mshadow
+  - mummer 
+  - munge
+  - muscle
+  - nasm
+  - ncbi-rmblastn
+  - ncbi-toolkit
+  - ncl  +triangle+udunits2
+  - ncurses  ~symlinks~termlib
+  - netcdf-fortran
+  - netcdf maxdims=1024 maxvars=8192 +mpi~parallel-netcdf+shared
+  - netlib-scalapack build_type=RelWithDebInfo ~pic+shared
+  - nettle
+  - ninja
+  - nnvm build_type=RelWithDebInfo  ~shared
+  - node-js
+  - npm
+  - numactl
+  - nwchem
+  - oniguruma
+  - opa-psm2
+  - openbabel build_type=RelWithDebInfo  +python
+  - openblas cpu_target= ~ilp64  +pic+shared threads=none ~virtual_machine
+  - openblas cpu_target= ~ilp64  +pic+shared threads=openmp ~virtual_machine
+  - openblas cpu_target=SANDYBRIDGE ~ilp64  +pic+shared threads=openmp ~virtual_machine
+  - opencv build_type=RelWithDebInfo +calib3d+core~cuda~dnn~eigen~fast-math+features2d+flann~gtk+highgui+imgproc~ipp+ipp_iw+jasper+java+jpeg+lapack+ml+opencl+opencl_svm+openclamdblas+openclamdfft+openmp+png~powerpc+pthreads_pf+python~qt+shared+stitching+superres+tiff+ts+video+videoio+videostab~vsx~vtk+zlib
+  - opencv build_type=RelWithDebInfo +core~cuda~dnn~eigen~gtk+highgui+imgproc~ipp+jasper+java+jpeg+openmp+png+python~qt+shared+tiff~vtk+zlib
+  - openfoam-org  +source
+  - openmpi fabrics=libfabric ~java~memchecker+pmi schedulers=slurm ~sqlite3~thread_multiple+vt
+  - openmpi fabrics=libfabric ~java~pmi schedulers=slurm ~sqlite3~thread_multiple+vt
+  - openmpi fabrics=libfabric ~java schedulers=slurm ~sqlite3~thread_multiple+vt
+  - openssl
+  - orca
+  - orfm
+  - orthofinder
+  - pacbio-daligner
+  - pacbio-damasker
+  - pacbio-dazz-db
+  - pacbio-dextractor
+  - pagit
+  - paml
+  - panda build_type=RelWithDebInfo
+  - pandaseq
+  - pango
+  - parallel
+  - parallel-netcdf
+  - parmetis build_type=RelWithDebInfo ~gdb  +shared
+  - parsimonator
+  - partitionfinder
+  - pbmpi
+  - pbsuite
+  - pcma
+  - pcre
+  - perl
+  - perl-algorithm-diff
+  - perl-bio-perl
+  - perl-bit-vector
+  - perl-capture-tiny
+  - perl-carp-clan
+  - perl-class-data-inheritable
+  - perl-class-inspector
+  - perl-data-dumper
+  - perl-data-stag
+  - perl-dbd-sqlite
+  - perl-dbfile
+  - perl-devel-cycle
+  - perl-devel-stacktrace
+  - perl-encode-locale
+  - perl-exception-class
+  - perl-exporter-tiny
+  - perl-extutils-makemaker
+  - perl-extutils-pkgconfig
+  - perl-file-copy-recursive
+  - perl-file-sharedir-install
+  - perl-file-which
+  - perl-font-ttf
+  - perl-gd
+  - perl-gd-graph
+  - perl-gdgraph-histogram
+  - perl-gd-text
+  - perl-graph
+  - perl-http-date
+  - perl-http-message
+  - perl-inline
+  - perl-inline-c
+  - perl-io-html
+  - perl-io-string
+  - perl-json
+  - perl-libwww-perl
+  - perl-list-moreutils
+  - perl-log-log4perl
+  - perl-lwp-mediatypes
+  - perl-math-cdf
+  - perl-math-cephes
+  - perl-module-build
+  - perl-padwalker
+  - perl-parallel-forkmanager
+  - perl-parse-recdescent
+  - perl-pdf-api2
+  - perl-pegex
+  - perl-perl6-slurp
+  - perl-scalar-util-numeric
+  - perl  +shared+threads
+  - perl-statistics-descriptive
+  - perl-sub-uplevel
+  - perl-test-deep
+  - perl-test-differences
+  - perl-test-exception
+  - perl-test-memory-cycle
+  - perl-test-most
+  - perl-test-needs
+  - perl-test-warn
+  - perl-text-diff
+  - perl-text-soundex
+  - perl-try-tiny
+  - perl-uri
+  - perl-uri-escape
+  - perl-xml-parser
+  - perl-yaml-libyaml
+  - pgdspider
+  - phantompeakqualtools
+  - phred
+  - phylip
+  - picard
+  - pilon
+  - pindel
+  - pixman
+  - pkg-config
+  - platypus
+  - plink
+  - poamsa
+  - portcullis
+  - postgresql
+  - presentproto
+  - preseq
+  - price
+  - probconsrna
+  - prodigal
+  - proj
+  - protobuf build_type=RelWithDebInfo  +shared
+  - ps-lite build_type=RelWithDebInfo 
+  - psm
+  - psmc
+  - py-alabaster
+  - py-appdirs
+  - py-argparse
+  - py-astroid
+  - py-babel
+  - py-backports-abc
+  - py-backports-functools-lru-cache
+  - py-backports-shutil-get-terminal-size
+  - py-backports-ssl-match-hostname
+  - py-biom-format
+  - py-biopython
+  - py-bottleneck
+  - py-breakseq2
+  - py-cdo
+  - py-certifi
+  - py-cffi
+  - py-checkm-genome
+  - py-click
+  - py-cogent
+  - py-colormath
+  - py-configparser
+  - py-crossmap
+  - py-cutadapt
+  - py-cycler
+  - py-cython
+  - py-dateutil
+  - py-decorator
+  - py-deeptools
+  - py-dendropy
+  - py-dlcpar
+  - py-docutils
+  - py-editdistance
+  - py-entrypoints
+  - py-enum34
+  - py-fastaindex
+  - py-faststructure
+  - py-funcsigs
+  - py-functools32
+  - py-future
+  - py-h5py
+  - py-htseq
+  - py-imagesize
+  - py-ipykernel
+  - py-ipython
+  - py-ipython-genutils
+  - py-isort
+  - py-jinja2
+  - py-jsonschema
+  - py-jupyter-client
+  - py-jupyter-console
+  - py-jupyter-core
+  - py-jupyter-notebook
+  - py-keras
+  - py-kiwisolver
+  - py-lazy-object-proxy
+  - py-lit
+  - py-llvmlite
+  - py-lzstring
+  - py-macs2
+  - py-mako
+  - py-mappy
+  - py-markdown
+  - py-markupsafe
+  - py-matplotlib
+  - py-matplotlib  ~qt+tk
+  - py-mccabe
+  - py-mg-rast-tools
+  - py-misopy
+  - py-mistune
+  - py-mpi4py
+  - py-multiqc
+  - py-nbconvert
+  - py-nbformat
+  - py-networkx
+  - py-nose
+  - py-numba
+  - py-numexpr
+  - py-numpy
+  - py-numpydoc
+  - py-openpyxl
+  - py-packaging
+  - py-pandas
+  - py-pathlib2
+  - py-pexpect
+  - py-pickleshare
+  - py-pillow
+  - py-pip
+  - py-pkgconfig
+  - py-pmw
+  - py-poster
+  - py-prettytable
+  - py-prompt-toolkit
+  - py-ptyprocess
+  - py-py
+  - py-py2bit
+  - py-pybedtools
+  - py-pybigwig
+  - py-pycparser
+  - py-pycurl
+  - py-pygments
+  - py-pygpu
+  - py-pylint
+  - py-pymol
+  - py-pyparsing
+  - py-pypeflow
+  - py-pyqt
+  - py-pyrad
+  - py-pysam
+  - py-pyscaf
+  - py-pytables
+  - py-pytz
+  - py-pyyaml
+  - py-requests
+  - py-requests-toolbelt
+  - py-rseqc
+  - py-scientificpython
+  - py-scikit-learn
+  - py-scipy
+  - py-setuptools
+  - py-setuptools-scm
+  - py-simplegeneric
+  - py-simplejson
+  - py-singledispatch
+  - py-sip
+  - py-six
+  - py-snowballstemmer
+  - py-spectra
+  - py-sphinx
+  - py-sphinxcontrib-websupport
+  - py-sphinx-rtd-theme
+  - py-subprocess32
+  - py-sympy
+  - py-theano
+  - python  +pic+pythoncmd+shared~tk~ucs4
+  - python  +pic+pythoncmd+shared+tk~ucs4
+  - python  +pic+pythoncmd+shared+tk+ucs4
+  - python  +pic+shared~tk~ucs4
+  - python  +pic+shared+tk~ucs4
+  - py-tornado
+  - py-traitlets
+  - py-typing
+  - py-vcversioner
+  - py-virtualenv
+  - py-wcwidth
+  - py-wrapt
+  - py-xopen
+  - py-xvfbwrapper
+  - py-zmq
+  - qhull build_type=RelWithDebInfo 
+  - qorts
+  - qt  +phonon~webkit
+  - r
+  - r-a4
+  - r-a4base
+  - r-a4classif
+  - r-a4core
+  - r-a4preproc
+  - r-a4reporting
+  - r-acepack
+  - randfold
+  - randrproto
+  - r-annaffy
+  - r-annotate
+  - r-annotationdbi
+  - r-annotationfilter
+  - r-annotationhub
+  - r-ape
+  - r-assertthat
+  - raxml
+  - ray build_type=RelWithDebInfo
+  - r-backports
+  - r-base64
+  - r-base64enc
+  - r-beanplot
+  - r-bfast
+  - r-bfastspatial
+  - r-bh
+  - r-bindr
+  - r-bindrcpp
+  - r-biobase
+  - r-biocgenerics
+  - r-biocinstaller
+  - r-biocparallel
+  - r-biomart
+  - r-biom-utils
+  - r-biostrings
+  - r-bit
+  - r-bit64
+  - r-bitops
+  - r-blob
+  - r-brew
+  - r-broom
+  - r-bsgenome
+  - r-bumphunter
+  - r-cairo
+  - r-car
+  - r-caret
+  - r-catools
+  - r-checkmate
+  - r-class
+  - r-classint
+  - rclone
+  - r-cluster
+  - r-clustergeneration
+  - r-cner
+  - r-coda
+  - r-codetools
+  - r-colorspace
+  - r-combinat
+  - r-convevol
+  - r-corhmm
+  - r-corpcor
+  - r-crayon
+  - r-curl
+  - r-data-table
+  - r-dbi
+  - r-delayedarray
+  - r-deoptimr
+  - r-deseq2
+  - r-devtools
+  - r-dichromat
+  - r-digest
+  - r-diptest
+  - r-dirichletmultinomial
+  - r-diversitree
+  - rdma-core build_type=RelWithDebInfo
+  - r-doparallel
+  - r-dorng
+  - r-downloader
+  - rdp-classifier
+  - r-dplyr
+  - r-e1071
+  - readfq
+  - readline
+  - recordproto
+  - r-edger
+  - redundans
+  - relion build_type=RelWithDebInfo +cuda cuda_arch=62 +double~double-gpu+gui
+  - relion build_type=RelWithDebInfo ~cuda cuda_arch= +double~double-gpu+gui
+  - renderproto
+  - r-ensembldb
+  - repeatmasker
+  - r-evaluate
+  - revbayes build_type=RelWithDebInfo ~mpi
+  - revbayes build_type=RelWithDebInfo +mpi
+  - r-fastmatch
+  - r-flexclust
+  - r-flexmix
+  - r-forcats
+  - r-foreach
+  - r-foreign
+  - r-formatr
+  - r-formula
+  - r-fpc
+  - r-futile-logger
+  - r-futile-options
+  - r-gbm
+  - r-gdalutils
+  - r-gdata
+  - r-gdsfmt
+  - r-genefilter
+  - r-genie3
+  - r-genomeinfodb
+  - r-genomeinfodbdata
+  - r-genomicalignments
+  - r-genomicfeatures
+  - r-genomicranges
+  - r-geomorph
+  - r-geoquery
+  - r-geosphere
+  - r-getopt
+  - r-ggmap
+  - r-ggplot2
+  - r-ggvis
+  - r-git2r
+  - r-glmnet
+  - r-glue
+  - r-go-db
+  - r-gplots
+  - r-gridextra
+  - r-gss
+  - r-gtable
+  - r-gtools
+  - r-haven
+  - r-highr
+  - r-hms
+  - r-htmltable
+  - r-htmltools
+  - r-htmlwidgets
+  - r-httpuv
+  - r-httr
+  - r-hwriter
+  - r-igraph
+  - r-illuminaio
+  - r-inline
+  - r-interactivedisplaybase
+  - r-iranges
+  - r-irlba
+  - r-iterators
+  - r-jaspar2018
+  - r-jomo
+  - r-jpeg
+  - r-jsonlite
+  - r-kegg-db
+  - r-keggrest
+  - r-kernlab
+  - r-kernsmooth
+  - r-knitr
+  - r-labeling
+  - r-lambda-r
+  - r-lattice
+  - r-latticeextra
+  - r-lazyeval
+  - r-limma
+  - r-lme4
+  - r-lmtest
+  - r-locfit
+  - r-lubridate
+  - r-magrittr
+  - r-mapproj
+  - r-maps
+  - r-maptools
+  - r-markdown
+  - r-mass
+  - r-matr
+  - r-matrix
+  - r-matrixmodels
+  - r-matrixstats
+  - rmats
+  - r-mclust
+  - r-memoise
+  - r-methodss3
+  - r-mgcv
+  - r-mgraster
+  - r-mice
+  - r-mime
+  - r-minfi
+  - r-minqa
+  - r-mitml
+  - r-mlbench
+  - r-mlinterfaces
+  - r-mmwrweek
+  - r-mnormt
+  - r-modelmetrics
+  - r-modeltools
+  - r-mpm
+  - r-multcomp
+  - r-multtest
+  - r-munsell
+  - r-mvtnorm
+  - rna-seqc
+  - r-ncdf4
+  - r-nlme
+  - r-nloptr
+  - r-nnet
+  - r-nor1mix
+  - r-nortest
+  - r-oo
+  - root build_type=RelWithDebInfo ~graphviz
+  - r-openssl
+  - r-paleotree
+  - r-pamr
+  - r-pan
+  - r-pbkrtest
+  - r-pfam-db
+  - r-phangorn
+  - r-phantompeakqualtools
+  - r-phytools
+  - r-pkgconfig
+  - r-pkgmaker
+  - r-plogr
+  - r-pls
+  - r-plyr
+  - r-png
+  - r-popgenome
+  - r-powerlaw
+  - r-prabclus
+  - r-praise
+  - r-preprocesscore
+  - r-protgenerics
+  - r-proto
+  - r-psych
+  - r-purrr
+  - r-quadprog
+  - r-quantmod
+  - r-quantreg
+  - r-quantro
+  - r-r6
+  - r-randomforest
+  - r-rappdirs
+  - r-raster
+  - r-rcolorbrewer
+  - r-rcpp
+  - r-rcppblaze
+  - r-rcppeigen
+  - r-rcurl
+  - r-rda
+  - r-readr
+  - r-registry
+  - r-reshape
+  - r-reshape2
+  - r-rgdal
+  - r-rgeos
+  - r-rgooglemaps
+  - r-rjags
+  - r-rjava
+  - r-rjson
+  - r-rjsonio
+  - r-rlang
+  - r-rmpi
+  - r-rngtools
+  - r-robustbase
+  - r-rocr
+  - r-rodbc
+  - r-roxygen2
+  - r-rpart
+  - r-rprojroot
+  - r-rrpp
+  - r-rsamtools
+  - r-rsolnp
+  - r-rsqlite
+  - r-rstan
+  - r-rstudioapi
+  - r-rtracklayer
+  - r-rvest
+  - r-s4vectors
+  - r-sandwich
+  - r-scales
+  - r-selectr
+  - rsem
+  - r-seqlogo
+  - r-sf
+  - r-sfsmisc
+  - r-shiny
+  - r-siggenes
+  - r-snow
+  - r-snowfall
+  - r-snprelate
+  - r-sourcetools
+  - r-sp
+  - r-sparsem
+  - r-spatial
+  - r-spem
+  - r-splitstackshape
+  - r-stanheaders
+  - r-stringi
+  - r-stringr
+  - r-summarizedexperiment
+  - r-survival
+  - rtax
+  - r-tensora
+  - r-testit
+  - r-testthat
+  - r-tfbstools
+  - r-tfmpvalue
+  - r-th-data
+  - r-threejs
+  - r-tibble
+  - r-tidycensus
+  - r-tidyr
+  - r-tigris
+  - r-tmixclust
+  - r-trimcluster
+  - r-truncnorm
+  - r-ttr
+  - r-udunits2
+  - r-units
+  - r-utils
+  - r-uuid
+  - r-varselrf
+  - r-vcd
+  - r-vfs
+  - r-vgam
+  - r-viridis
+  - r-viridislite
+  - r-wgcna
+  - r-whisker
+  - r-withr
+  - r-xlsx
+  - r-xlsxjars
+  - r-xml
+  - r-xml2
+  - r-xtable
+  - r-xts
+  - r-xvector
+  - r-yaml
+  - r-yarn
+  - r-zlibbioc
+  - r-zoo
+  - sabre
+  - salmon build_type=RelWithDebInfo
+  - samblaster
+  - samtools
+  - satsuma2 build_type=RelWithDebInfo
+  - scallop
+  - scons
+  - scotch  +shared
+  - sentieon-genomics
+  - seqprep
+  - seqtk
+  - serf
+  - sga
+  - shapeit
+  - shared-mime-info
+  - shocklibs
+  - sickle
+  - signalp
+  - singularity
+  - smalt
+  - snakemake
+  - snap
+  - snap-berkeley
+  - snap-korf
+  - snappy build_type=RelWithDebInfo +shared
+  - snpeff
+  - snphylo
+  - soap2
+  - soapdenovo2
+  - soapdenovo-trans
+  - soapindel
+  - soapsnp
+  - sortmerna build_type=RelWithDebInfo
+  - spades build_type=RelWithDebInfo
+  - spark
+  - sparsehash
+  - sparta
+  - spm
+  - sqlite 
+  - squid
+  - sra-toolkit
+  - sspace-longread
+  - stacks
+  - star
+  - stringtie
+  - structure
+  - subread
+  - subversion
+  - suite-sparse
+  - sumaclust
+  - supernova
+  - swap-assembler
+  - swarm
+  - swig
+  - tabix
+  - tar
+  - tar 
+  - targetp
+  - tassel
+  - tcl
+  - tcoffee
+  - tcsh 
+  - texinfo
+  - time
+  - tk
+  - tmalign
+  - tophat
+  - tppred
+  - transdecoder
+  - transposome
+  - treesub
+  - trf
+  - trimgalore
+  - trimmomatic
+  - trinity
+  - trinotate
+  - trnascan-se
+  - udunits2
+  - unzip
+  - usearch
+  - util-macros
+  - valgrind
+  - varscan
+  - vcftools
+  - vegas2
+  - velvet
+  - videoproto
+  - viennarna
+  - vmatch
+  - voropp
+  - vsearch
+  - wget ssl=openssl +zlib
+  - wgsim
+  - wrf build_type=dmpar compile_type=em_real nesting=basic 
+  - wtdbg2
+  - wx 
+  - xcb-proto 
+  - xerces-c
+  - xextproto
+  - xineramaproto
+  - xplor-nih
+  - xproto
+  - xrandr
+  - xtrans
+  - xz
+  - yasm
+  - zeromq
+  - zip
+  - zlib
+  - zsh
+
+  modules: {
+    enable:
+      - lmod
+    lmod:
+    core_compilers:
+      - 'gcc@4.8.5'
+    all:
+      autoload: 'direct'
+      suffixes:
+        ^python@2.0:2.99: 'py2'
+        ^python@3.0:3.99: 'py3'
+        ^r@3.1: 'r3.1'
+        ^r@3.2: 'r3.2'
+        ^r@3.3: 'r3.3'
+        ^r@3.4: 'r3.4'
+        ^r@3.5: 'r3.5'
+        ^cuda@8.0:8.9: 'cuda8'
+        ^cuda@9.0:9.9: 'cuda9'
+        ^openmpi@2: 'openmpi2'
+        ^openmpi@3: 'openmpi3'
+        ^mpich: 'mpich'
+    hierarchy:
+        - None
+  }
+            
+  packages: 
+    all:
+    compiler: [gcc@4.8.5, gcc@7.4.0]
+    providers:
+      blas: [openblas]
+      golang: [gcc]
+      lapack: [openblas]
+      mkl: [intel-mkl]
+      mpi: [openmpi]
+      pil: [py-pillow]
+      scalapack: [netlib-scalapack]
+  
+  repos: []
+
+  config: {}
+  mirrors: {}
+
