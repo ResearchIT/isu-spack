@@ -1,5 +1,8 @@
 spack:
   specs: 
+  - gcc@8.3.0
+  - gcc@7.4.0
+  - gcc@6.5.0
   - abyss maxk=0
   - abyss maxk=64
   - abyss maxk=128
@@ -1085,7 +1088,7 @@ spack:
             
   packages: 
     all:
-      compiler: [gcc@8.3.0, gcc@7.4.0, gcc@6.5.0, gcc@4.9.4]
+      compiler: [gcc@8.3.0, gcc@7.4.0, gcc@6.5.0, gcc@4.8.5]
       providers:
         blas: [openblas]
         golang: [gcc]
@@ -1094,6 +1097,12 @@ spack:
         mpi: [openmpi]
         pil: [py-pillow]
         scalapack: [netlib-scalapack]
+    gcc@8.3.0:
+      compiler: [gcc@4.8.5]
+    gcc@7.4.0:
+      compiler: [gcc@8.3.0]
+    gcc@6.5.0:
+      compiler: [gcc@8.3.0]
     genometools:
       compiler: [gcc@6.5.0]
 
