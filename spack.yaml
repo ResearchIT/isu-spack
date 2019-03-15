@@ -10,21 +10,17 @@ spack:
   - albert
   - alglib
   - allpaths-lg
-  - alsa-lib
   - ampliconnoise
   - andi
   - angsd
-  - ant
   - aperture-photometry
   - arlecore
   - aspera-cli
   - astral
   - atk
-  - atlas threads=none
+  - atlas
   - augustus
-  - autoconf
   - autofact
-  - automake
   - bambam
   - bamtools
   - bamutil 
@@ -37,74 +33,60 @@ spack:
   - beast-tracer
   - bedops
   - bedtools2
-  - binutils  ~plugins
   - bioawk
-  - bison 
   - blast2go
   - blast-legacy
-  - blast-plus  +pcre+perl+png+python~static+zlib
+  - blast-plus
   - blat
-  - boost
   - bowtie
   - bowtie2
-  - bowtie2 
-  - bpp-core build_type=RelWithDebInfo
-  - bpp-phyl build_type=RelWithDebInfo
-  - bpp-seq build_type=RelWithDebInfo
-  - bpp-suite build_type=RelWithDebInfo
+  - bpp-core
+  - bpp-phyl
+  - bpp-seq
+  - bpp-suite
   - braker
-  - breakdancer build_type=RelWithDebInfo
+  - breakdancer
   - bridger
   - bsseeker2
   - bucky
   - busco
   - butter
   - bwa
-  - bzip2
-  - cairo
   - canu
   - cap3
   - casper
   - cdbfasta
   - cdhit
-  - cdo grib2=eccodes +hdf5+libxml2~magics+netcdf+openmp+proj+szip+udunits2
-  - cfitsio
-  - cgal build_type=Release ~core+demos~imageio+shared
-  - charm backend=mpi ~papi  +shared+smp~tcp
+  - cdo
+  - cgal
+  - charmpp
   - chlorop 
   - circos
   - cistem
   - cleaveland4
   - clustalo
   - clustalw
-  - cmake
-  - cmake  ~qt
-  - compositeproto
   - corset
   - cub
   - cuda
   - cudnn
   - cufflinks
-  - cups
-  - curl
   - damageproto
-  - dbus
-  - dealii build_type=DebugRelease ~cuda cuda_arch= ~doc+gmsh+gsl+hdf5~int64+metis+mpi+muparser+nanoflann+netcdf+oce~optflags+p4est+petsc~python+scalapack+slepc+sundials+trilinos
+  - dealii
   - delly2
   - dialign-tx
-  - diamond build_type=RelWithDebInfo
+  - diamond
   - discovar
   - discovardenovo
-  - dmlc-core build_type=RelWithDebInfo +openmp 
   - ea-utils
-  - eigen build_type=RelWithDebInfo +fftw+metis+mpfr+scotch+suitesparse
+  - eigen
   - emboss
   - energyplus
-  - esmf  +pio+pnetcdf+xerces
+  - esmf
   - exabayes
   - exonerate
   - expat
-  - express build_type=RelWithDebInfo
+  - express
   - falcon
   - fast-gbs
   - fastme
@@ -117,242 +99,122 @@ spack:
   - fermi
   - fermikit
   - fermisciencetools
-  - ffmpeg
-  - "fftw simd=avx,avx2,sse2"
+  - fftw +openmp
+  - fftw ~openmp
   - fimpute
   - fixesproto
-  - flex
-  - fltk  +shared
-  - fontconfig
-  - font-util
   - fpc
   - freebayes
-  - freeglut build_type=RelWithDebInfo
-  - freetype
   - fsl
   - gapcloser
   - gapfiller
   - gatk
-  - gawk
   - gblocks
-  - "gcc languages=c,c++,fortran ~piclibs~strip"
   - gcta
   - gdal
-  - gdbm
-  - gdk-pixbuf
   - genemark-et
   - genometools
   - geos
-  - gettext  +tar+xz
-  - gflags build_type=RelWithDebInfo
-  - giflib 
-  - glew
-  - glib 
-  - glog
-  - glpk
-  - glproto
-  - gmake
   - gmap-gsnap
-  - "gmap-gsnap simd=avx2,sse2,sse42"
-  - gmp
-  - gnuplot  ~pbm~wx
-  - gnutls
-  - gobject-introspection 
-  - gperf
-  - gperftools
   - gromacs build_type=Release ~cuda~double+mpi+plumed+shared
-  - gromacs build_type=Release +cuda~double+mpi~plumed+shared
-  - gromacs build_type=RelWithDebInfo ~cuda~double~mpi~plumed+shared
-  - gromacs build_type=RelWithDebInfo +cuda~double+mpi~plumed+shared
-  - gsl
-  - gtkplus 
+  - gromacs build_type=Release ~cuda~double~mpi~plumed+shared
+  - gromacs build_type=Release ~cuda~double~mpi+plumed+shared
+  - gromacs build_type=Release +cuda~double+mpi+plumed+shared
+  - gromacs build_type=Release +cuda~double~mpi~plumed+shared
+  - gromacs build_type=Release +cuda~double~mpi+plumed+shared
   - hadoop
   - hapcut2
   - hapdip
   - haploview
   - harfbuzz
   - hdf5
-  - help2man
   - hisat2
   - hisea
   - hmmer
-  - hoomd-blue build_type=RelWithDebInfo +cuda~doc~mpi
-  - hoomd-blue build_type=RelWithDebInfo +cuda~doc+mpi
+  - hoomd-blue build_type=Release +cuda~doc~mpi
+  - hoomd-blue build_type=Release +cuda~doc+mpi
+  - hoomd-blue build_type=Release ~cuda~doc~mpi
+  - hoomd-blue build_type=Release ~cuda~doc+mpi
   - hpl
   - htslib
-  - hwloc
   - hybpiper
-  - hyphy build_type=RelWithDebInfo
-  - icu4c
+  - hyphy
   - idba
   - igv
   - igvtools
   - image-magick
   - impute2
   - infernal
-  - inputproto
-  - intel-mkl-dnn build_type=RelWithDebInfo
+  - intel-mkl-dnn
   - intel-mkl threads=none
+  - intel-mkl threads=openmp
+  - intel-mkl threads=tbb
   - intel-tbb 
-  - intel-tbb  +shared
-  - intltool
-  - intltool 
   - isl
   - itsx
   - jags
-  - jasper build_type=Release +jpeg~opengl+shared
-  - jasper  +shared
   - jdk
   - jellyfish
-  - jemalloc
-  - jq
-  - json-c
   - julia
-  - k8
   - kaks-calculator
-  - kallisto build_type=RelWithDebInfo
+  - kallisto
   - kbproto
   - kmergenie
   - kraken
-  - lammps build_type=RelWithDebInfo +class2+colloid+compress+coreshell+dipole+granular+kspace+latte+lib~manybody+mc+meam+misc+molecule+mpi+mpiio  +peri~poems+python~qeq+reax+replica+rigid+shock+snap+srd~user-atc+user-h5md+user-lb~user-misc+user-netcdf~user-omp~voronoi
+  - lammps
   - last
-  - latte build_type=RelWithDebInfo +mpi~progress+shared
-  - lcms
-  - leveldb
-  - libaio
-  - libbeagle
-  - libbeagle cuda_arch=none
-  - libbsd 
-  - libcerf
-  - libcheck build_type=RelWithDebInfo
-  - libdivsufsort build_type=RelWithDebInfo
-  - libedit
-  - libelf
-  - libevent
-  - "libfabric fabrics=psm,psm2,sockets,udp,verbs"
-  - libffi
-  - libgcrypt
-  - libgd
-  - libgeotiff
-  - libgpg-error
-  - libgpuarray build_type=RelWithDebInfo
-  - libgtextutils 
-  - libice
-  - libiconv
-  - libjpeg
-  - libjpeg-turbo
-  - libmng
-  - libnl
+  - latte
+  - libbeagle~cuda
+  - libbeagle+cuda cuda_arch=72
+  - libfabric
   - libnova
-  - libpciaccess
-  - libpng
-  - libpthread-stubs
-  - libsigsegv
-  - libsm
-  - libsodium
-  - libsvm
-  - libszip
-  - libtiff
-  - libtool
-  - libunwind
-  - libuuid
-  - libx11
-  - libxau
-  - libxaw
-  - libxcb
-  - libxcomposite
-  - libxdamage
-  - libxdmcp
-  - libxext
-  - libxfixes
-  - libxft
-  - libxi
-  - libxinerama
-  - libxml2
-  - libxmu
-  - libxpm
-  - libxrandr
-  - libxrender
-  - libxshmfence
-  - libxslt
-  - libxt
-  - libxtst
-  - libxv
-  - libxvmc
-  - libzip
   - linkphase3
-  - llvm build_type=Release +clang+compiler-rt+gold+internal_unwind+libcxx~link_dylib+lld+lldb+polly~python~shared_libs
-  - lmdb
+  - llvm
   - lordec
   - lz4
   - lzma
   - lzo
-  - m4  +sigsegv
   - mafft
   - maq
-  - mariadb build_type=RelWithDebInfo +nonblocking
-  - mark
+  - mariadb
+  #- mark #not merged yet https://github.com/spack/spack/pull/10513
   - masurca
-  - matlab key=00005-16835-26635-50915-34103-49806-00691-03238-60527-20825-20994-49122-40985-07857-10083-41606-05732-29548-63854-56777-39694-11157 mode=silent
+  - matlab
   - maven
   - maverick
   - mcl
   - mefit
   - meme
-  - meraculous build_type=RelWithDebInfo
-  - mesa
-  - mesa-glu
-  - metasv
-  - metis build_type=Release ~gdb~int64  ~real64+shared
+  - meraculous
+  #- metasv #removed during relicense, needs recreated https://github.com/spack/spack/pull/9450 https://issues.its.iastate.edu/browse/RITPACK-1024
   - microbiomeutil
-  - mindthegap build_type=RelWithDebInfo
+  - mindthegap
   - miniasm
   - miniconda2
   - miniconda3
   - minimap2
   - mirdeep
   - mitofates
-  - mitofates 
   - mlhka
   - mothur
-  - mpc
   - mpest
-  - mpfr 
-  - mpich device=ch3 +hydra netmod=ofi +pmi+romio~verbs
-  - mpich device=ch3 +hydra netmod=tcp +pmi+romio~verbs
-  - msgpack-c build_type=RelWithDebInfo
-  - mshadow
+  - mpich
   - mummer 
   - munge
   - muscle
   - nasm
   - ncbi-rmblastn
   - ncbi-toolkit
-  - ncl  +triangle+udunits2
-  - ncurses  ~symlinks~termlib
+  - ncl
   - netcdf-fortran
-  - netcdf maxdims=1024 maxvars=8192 +mpi~parallel-netcdf+shared
-  - netlib-scalapack build_type=RelWithDebInfo ~pic+shared
-  - nettle
-  - ninja
-  - nnvm build_type=RelWithDebInfo  ~shared
-  - node-js
-  - npm
-  - numactl
+  - netcdf
+  - netlib-scalapack
   - nwchem
-  - oniguruma
-  - opa-psm2
-  - openbabel build_type=RelWithDebInfo  +python
-  - openblas cpu_target= ~ilp64  +pic+shared threads=none ~virtual_machine
-  - openblas cpu_target= ~ilp64  +pic+shared threads=openmp ~virtual_machine
-  - openblas cpu_target=SANDYBRIDGE ~ilp64  +pic+shared threads=openmp ~virtual_machine
-  - opencv build_type=RelWithDebInfo +calib3d+core~cuda~dnn~eigen~fast-math+features2d+flann~gtk+highgui+imgproc~ipp+ipp_iw+jasper+java+jpeg+lapack+ml+opencl+opencl_svm+openclamdblas+openclamdfft+openmp+png~powerpc+pthreads_pf+python~qt+shared+stitching+superres+tiff+ts+video+videoio+videostab~vsx~vtk+zlib
-  - opencv build_type=RelWithDebInfo +core~cuda~dnn~eigen~gtk+highgui+imgproc~ipp+jasper+java+jpeg+openmp+png+python~qt+shared+tiff~vtk+zlib
-  - openfoam-org  +source
-  - openmpi fabrics=libfabric ~java~memchecker+pmi schedulers=slurm ~sqlite3~thread_multiple+vt
-  - openmpi fabrics=libfabric ~java~pmi schedulers=slurm ~sqlite3~thread_multiple+vt
-  - openmpi fabrics=libfabric ~java schedulers=slurm ~sqlite3~thread_multiple+vt
-  - openssl
+  - openbabel
+  - openblas
+  - opencv
+  - openfoam-org
+  - openmpi
   - orca
   - orfm
   - orthofinder
@@ -362,18 +224,17 @@ spack:
   - pacbio-dextractor
   - pagit
   - paml
-  - panda build_type=RelWithDebInfo
+  - panda
   - pandaseq
   - pango
   - parallel
   - parallel-netcdf
-  - parmetis build_type=RelWithDebInfo ~gdb  +shared
+  - parmetis
   - parsimonator
   - partitionfinder
   - pbmpi
   - pbsuite
   - pcma
-  - pcre
   - perl
   - perl-algorithm-diff
   - perl-bio-perl
@@ -460,8 +321,8 @@ spack:
   - probconsrna
   - prodigal
   - proj
-  - protobuf build_type=RelWithDebInfo  +shared
-  - ps-lite build_type=RelWithDebInfo 
+  - protobuf
+  - ps-lite
   - psm
   - psmc
   - py-alabaster
@@ -535,6 +396,7 @@ spack:
   - py-mistune
   - py-mpi4py
   - py-multiqc
+  - py-mxnet
   - py-nbconvert
   - py-nbformat
   - py-networkx
@@ -597,11 +459,7 @@ spack:
   - py-subprocess32
   - py-sympy
   - py-theano
-  - python  +pic+pythoncmd+shared~tk~ucs4
-  - python  +pic+pythoncmd+shared+tk~ucs4
-  - python  +pic+pythoncmd+shared+tk+ucs4
-  - python  +pic+shared~tk~ucs4
-  - python  +pic+shared+tk~ucs4
+  - python
   - py-tornado
   - py-traitlets
   - py-typing
@@ -612,9 +470,8 @@ spack:
   - py-xopen
   - py-xvfbwrapper
   - py-zmq
-  - qhull build_type=RelWithDebInfo 
+  - qhull
   - qorts
-  - qt  +phonon~webkit
   - r
   - r-a4
   - r-a4base
@@ -633,7 +490,7 @@ spack:
   - r-ape
   - r-assertthat
   - raxml
-  - ray build_type=RelWithDebInfo
+  - ray
   - r-backports
   - r-base64
   - r-base64enc
@@ -689,7 +546,6 @@ spack:
   - r-diptest
   - r-dirichletmultinomial
   - r-diversitree
-  - rdma-core build_type=RelWithDebInfo
   - r-doparallel
   - r-dorng
   - r-downloader
@@ -701,14 +557,14 @@ spack:
   - recordproto
   - r-edger
   - redundans
-  - relion build_type=RelWithDebInfo +cuda cuda_arch=62 +double~double-gpu+gui
-  - relion build_type=RelWithDebInfo ~cuda cuda_arch= +double~double-gpu+gui
+  - relion +cuda cuda_arch=62 +double~double-gpu+gui
+  - relion ~cuda cuda_arch= +double~double-gpu+gui
   - renderproto
   - r-ensembldb
   - repeatmasker
   - r-evaluate
-  - revbayes build_type=RelWithDebInfo ~mpi
-  - revbayes build_type=RelWithDebInfo +mpi
+  - revbayes build_type=Release ~mpi
+  - revbayes build_type=Release +mpi
   - r-fastmatch
   - r-flexclust
   - r-flexmix
@@ -822,7 +678,7 @@ spack:
   - r-nor1mix
   - r-nortest
   - r-oo
-  - root build_type=RelWithDebInfo ~graphviz
+  - root
   - r-openssl
   - r-paleotree
   - r-pamr
@@ -954,13 +810,12 @@ spack:
   - r-zlibbioc
   - r-zoo
   - sabre
-  - salmon build_type=RelWithDebInfo
+  - salmon
   - samblaster
   - samtools
-  - satsuma2 build_type=RelWithDebInfo
+  - satsuma2
   - scallop
   - scons
-  - scotch  +shared
   - sentieon-genomics
   - seqprep
   - seqtk
@@ -977,7 +832,7 @@ spack:
   - snap
   - snap-berkeley
   - snap-korf
-  - snappy build_type=RelWithDebInfo +shared
+  - snappy
   - snpeff
   - snphylo
   - soap2
@@ -985,13 +840,12 @@ spack:
   - soapdenovo-trans
   - soapindel
   - soapsnp
-  - sortmerna build_type=RelWithDebInfo
-  - spades build_type=RelWithDebInfo
+  - sortmerna
+  - spades
   - spark
   - sparsehash
   - sparta
   - spm
-  - sqlite 
   - squid
   - sra-toolkit
   - sspace-longread
@@ -1000,24 +854,16 @@ spack:
   - stringtie
   - structure
   - subread
-  - subversion
-  - suite-sparse
   - sumaclust
   - supernova
   - swap-assembler
   - swarm
-  - swig
   - tabix
-  - tar
   - tar 
   - targetp
   - tassel
-  - tcl
   - tcoffee
-  - tcsh 
   - texinfo
-  - time
-  - tk
   - tmalign
   - tophat
   - tppred
@@ -1039,30 +885,17 @@ spack:
   - vcftools
   - vegas2
   - velvet
-  - videoproto
   - viennarna
   - vmatch
   - voropp
   - vsearch
-  - wget ssl=openssl +zlib
+  - wget
   - wgsim
-  - wrf build_type=dmpar compile_type=em_real nesting=basic 
+  # - wrf build_type=dmpar compile_type=em_real nesting=basic # in progress https://github.com/spack/spack/pull/9851
   - wtdbg2
-  - wx 
-  - xcb-proto 
-  - xerces-c
-  - xextproto
-  - xineramaproto
   - xplor-nih
-  - xproto
-  - xrandr
-  - xtrans
-  - xz
   - yasm
-  - zeromq
   - zip
-  - zlib
-  - zsh
 
   modules: 
     enable:
@@ -1097,6 +930,22 @@ spack:
         mpi: [openmpi]
         pil: [py-pillow]
         scalapack: [netlib-scalapack]
+      permissions:
+        read: world
+        write: user
+
+    cgal:
+      variants:  +demos+imageio
+    charmpp:
+      variants:  backend=mpi
+    dealii:
+      variants:  ~cuda cuda_arch= ~doc+gmsh+gsl+hdf5~int64+metis+mpi+muparser+nanoflann+netcdf+oce~optflags+p4est+petsc~python+scalapack+slepc+sundials+trilinos
+    eigen:
+      variants: +fftw+metis+mpfr+scotch+suitesparse
+    fftw:
+      variants:  simd=sse,sse2,avx,avx2,avx512
+    gcc:
+      variants: languages=c,c++,fortran ~piclibs~strip
     gcc@8.3.0:
       compiler: [gcc@4.8.5]
     gcc@7.4.0:
@@ -1105,6 +954,23 @@ spack:
       compiler: [gcc@8.3.0]
     genometools:
       compiler: [gcc@6.5.0]
+    gmap-gsnap:
+      variants: simd=sse2,sse42,avx2,avx512
+    lammps:
+      variants:  build_type=Release +class2+colloid+compress+coreshell+dipole+granular+kspace+latte+lib~manybody+mc+meam+misc+molecule+mpi+mpiio  +peri~poems+python~qeq+reax+replica+rigid+shock+snap+srd~user-atc+user-h5md+user-lb~user-misc+user-netcdf~user-omp~voronoi
+    libfabric:
+      variants: fabrics=psm,psm2,sockets,udp,verbs
+    matlab:
+      variants: key=00005-16835-26635-50915-34103-49806-00691-03238-60527-20825-20994-49122-40985-07857-10083-41606-05732-29548-63854-56777-39694-11157 mode=silent
+    mpich:
+      variants: netmod=ofi
+    opencv:
+      variants: +calib3d+core~cuda~dnn~eigen~fast-math+features2d+flann~gtk+highgui+imgproc~ipp+ipp_iw+jasper+java+jpeg+lapack+ml+opencl+opencl_svm+openclamdblas+openclamdfft+openmp+png~powerpc+pthreads_pf+python~qt+shared+stitching+superres+tiff+ts+video+videoio+videostab~vsx~vtk+zlib
+    openmpi:
+      variants: fabrics=libfabric +pmi schedulers=slurm +legacylaunchers
+    python:
+      variants: +tkinter+ucs4+optimizations
+      version: [3.7.2, 2.7.16]
 
   repos: []
 
