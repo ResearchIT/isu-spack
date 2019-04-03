@@ -1,5 +1,5 @@
 spack:
-  specs: 
+  specs:
   - gcc@8.3.0
   - gcc@7.4.0
   - gcc@6.5.0
@@ -20,13 +20,14 @@ spack:
   - atlas
   - augustus
   - autofact
+  
   # - bambam #not merged yet https://github.com/spack/spack/pull/9792
   - bamtools
-  - bamutil 
-  - bazel 
+  - bamutil
+  - bazel
   - bbmap
   - bcftools
-  - bcl2fastq2 
+  - bcl2fastq2
   - beast1
   - beast2
   - beast-tracer
@@ -59,7 +60,7 @@ spack:
   - cdo
   - cgal
   - charmpp
-  - chlorop 
+  - chlorop
   - circos
   - cistem
   - cleaveland4
@@ -90,7 +91,7 @@ spack:
   - fast-gbs
   - fastme
   - fastphase
-  - fastqc 
+  - fastqc
   - fastq-screen
   - fastqvalidator
   - fasttree
@@ -98,8 +99,8 @@ spack:
   - fermi
   - fermikit
   - fermisciencetools
-  - fftw +openmp
-  - fftw ~openmp
+  - fftw+openmp
+  - fftw~openmp
   - fimpute
   - fixesproto
   - fpc
@@ -148,7 +149,7 @@ spack:
   - intel-mkl threads=none
   - intel-mkl threads=openmp
   - intel-mkl threads=tbb
-  - intel-tbb 
+  - intel-tbb
   - isl
   - itsx
   - jags
@@ -176,6 +177,7 @@ spack:
   - mafft
   - maq
   - mariadb
+  
   #- mark #not merged yet https://github.com/spack/spack/pull/10513
   - masurca
   - matlab
@@ -185,6 +187,7 @@ spack:
   - mefit
   - meme
   - meraculous
+  
   #- metasv #removed during relicense, needs recreated https://github.com/spack/spack/pull/9450 https://issues.its.iastate.edu/browse/RITPACK-1024
   - microbiomeutil
   - mindthegap
@@ -198,7 +201,7 @@ spack:
   - mothur
   - mpest
   - mpich
-  - mummer 
+  - mummer
   - munge
   - muscle
   - nasm
@@ -283,7 +286,7 @@ spack:
   - perl-pegex
   - perl-perl6-slurp
   - perl-scalar-util-numeric
-  - perl  +shared+threads
+  - perl+shared+threads
   - perl-statistics-descriptive
   - perl-sub-uplevel
   - perl-test-deep
@@ -388,7 +391,7 @@ spack:
   - py-markdown
   - py-markupsafe
   - py-matplotlib
-  - py-matplotlib  ~qt+tk
+  - py-matplotlib~qt+tk
   - py-mccabe
   - py-mg-rast-tools
   - py-misopy
@@ -556,8 +559,8 @@ spack:
   - recordproto
   - r-edger
   - redundans
-  - relion +cuda cuda_arch=62 +double~double-gpu+gui
-  - relion ~cuda cuda_arch= +double~double-gpu+gui
+  - relion+cuda cuda_arch=62 +double~double-gpu+gui
+  - relion~cuda cuda_arch=+double~double-gpu+gui
   - renderproto
   - r-ensembldb
   - repeatmasker
@@ -858,7 +861,7 @@ spack:
   - swap-assembler
   - swarm
   - tabix
-  - tar 
+  - tar
   - targetp
   - tassel
   - tcoffee
@@ -890,35 +893,47 @@ spack:
   - vsearch
   - wget
   - wgsim
+  
   # - wrf build_type=dmpar compile_type=em_real nesting=basic # in progress https://github.com/spack/spack/pull/9851
   - wtdbg2
   - xplor-nih
   - yasm
   - zip
 
-  modules: 
+  modules:
     enable:
-      - lmod
+    - lmod
     lmod:
       core_compilers:
-        - 'gcc@4.8.5'
+      - gcc@4.8.5
       all:
-        autoload: 'direct'
+        autoload: direct
         suffixes:
-          ^python@2.0:2.99: 'py2'
-          ^python@3.0:3.99: 'py3'
-          ^r@3.4.4: 'r3.4.4'
-          ^r@3.5.2: 'r3.5.2'
-          ^cuda@8.0:8.9: 'cuda8'
-          ^cuda@9.0:9.9: 'cuda9'
-          ^openmpi@2: 'openmpi2'
-          ^openmpi@3: 'openmpi3'
-          ^mpich: 'mpich'
-          ^mvapich2: 'mvapich2'
+          ^python@2.0:2.99: py2
+          ^python@3.0:3.99: py3
+          ^r@3.4.4: r3.4.4
+          ^r@3.5.2: r3.5.2
+          ^cuda@8.0:8.9: cuda8
+          ^cuda@9.0:9.9: cuda9
+          ^openmpi@2: openmpi2
+          ^openmpi@3: openmpi3
+          ^mpich: mpich
+          ^mvapich2: mvapich2
+        filter:
+          environment_blacklist: []
+        load: []
+        environment:
+          unset: []
+        conflict: []
       hierarchy:
-          - None
-            
-  packages: 
+      - None
+
+      blacklist_implicits: false
+      verbose: false
+      whitelist: []
+      blacklist: []
+      hash_length: 7
+  packages:
     all:
       compiler: [gcc@8.3.0, gcc@7.4.0, gcc@6.5.0, gcc@4.8.5]
       providers:
@@ -933,52 +948,172 @@ spack:
         read: world
         write: user
 
+      buildable: true
+      version: []
+      paths: {}
+      modules: {}
     aegean:
       compiler: [gcc@6.5.0]
+      buildable: true
+      version: []
+      providers: {}
+      paths: {}
+      modules: {}
     allpaths-lg:
       compiler: [gcc@4.8.5]
+      buildable: true
+      version: []
+      providers: {}
+      paths: {}
+      modules: {}
     bowtie:
       compiler: [gcc@7.4.0]
+      buildable: true
+      version: []
+      providers: {}
+      paths: {}
+      modules: {}
     cgal:
-      variants:  +demos+imageio
+      variants: +demos+imageio
+      buildable: true
+      version: []
+      providers: {}
+      paths: {}
+      modules: {}
+      compiler: []
     charmpp:
-      variants:  backend=mpi
+      variants: backend=mpi
+      buildable: true
+      version: []
+      providers: {}
+      paths: {}
+      modules: {}
+      compiler: []
     dealii:
-      variants:  ~cuda cuda_arch= ~doc+gmsh+gsl+hdf5~int64+metis+mpi+muparser+nanoflann+netcdf+oce~optflags+p4est+petsc~python+scalapack+slepc+sundials+trilinos
+      variants: ~cuda cuda_arch= ~doc+gmsh+gsl+hdf5~int64+metis+mpi+muparser+nanoflann+netcdf+oce~optflags+p4est+petsc~python+scalapack+slepc+sundials+trilinos
+      buildable: true
+      version: []
+      providers: {}
+      paths: {}
+      modules: {}
+      compiler: []
     eigen:
       variants: +fftw+metis+mpfr+scotch+suitesparse
+      buildable: true
+      version: []
+      providers: {}
+      paths: {}
+      modules: {}
+      compiler: []
     fftw:
-      variants:  simd=sse,sse2,avx,avx2,avx512
+      variants: simd=sse,sse2,avx,avx2,avx512
+      buildable: true
+      version: []
+      providers: {}
+      paths: {}
+      modules: {}
+      compiler: []
     gcc:
       variants: languages=c,c++,fortran ~piclibs~strip
+      buildable: true
+      version: []
+      providers: {}
+      paths: {}
+      modules: {}
+      compiler: []
     gcc@8.3.0:
       compiler: [gcc@4.8.5]
+      buildable: true
+      version: []
+      providers: {}
+      paths: {}
+      modules: {}
     gcc@7.4.0:
       compiler: [gcc@8.3.0]
+      buildable: true
+      version: []
+      providers: {}
+      paths: {}
+      modules: {}
     gcc@6.5.0:
       compiler: [gcc@8.3.0]
+      buildable: true
+      version: []
+      providers: {}
+      paths: {}
+      modules: {}
     gmap-gsnap:
       variants: simd=sse2,sse42,avx2,avx512
+      buildable: true
+      version: []
+      providers: {}
+      paths: {}
+      modules: {}
+      compiler: []
     lammps:
-      variants:  build_type=Release +class2+colloid+compress+coreshell+dipole+granular+kspace+latte+lib~manybody+mc+meam+misc+molecule+mpi+mpiio  +peri~poems+python~qeq+reax+replica+rigid+shock+snap+srd~user-atc+user-h5md+user-lb~user-misc+user-netcdf~user-omp~voronoi
+      variants: build_type=Release +class2+colloid+compress+coreshell+dipole+granular+kspace+latte+lib~manybody+mc+meam+misc+molecule+mpi+mpiio  +peri~poems+python~qeq+reax+replica+rigid+shock+snap+srd~user-atc+user-h5md+user-lb~user-misc+user-netcdf~user-omp~voronoi
+      buildable: true
+      version: []
+      providers: {}
+      paths: {}
+      modules: {}
+      compiler: []
     libfabric:
       variants: fabrics=psm,psm2,sockets,udp,verbs
+      buildable: true
+      version: []
+      providers: {}
+      paths: {}
+      modules: {}
+      compiler: []
     matlab:
-      variants: key=00005-16835-26635-50915-34103-49806-00691-03238-60527-20825-20994-49122-40985-07857-10083-41606-05732-29548-63854-56777-39694-11157 mode=silent
+      variants: key=00005-16835-26635-50915-34103-49806-00691-03238-60527-20825-20994-49122-40985-07857-10083-41606-05732-29548-63854-56777-39694-11157
+        mode=silent
+      buildable: true
+      version: []
+      providers: {}
+      paths: {}
+      modules: {}
+      compiler: []
     mpich:
       variants: netmod=ofi
+      buildable: true
+      version: []
+      providers: {}
+      paths: {}
+      modules: {}
+      compiler: []
     opencv:
       variants: +calib3d+core~cuda~dnn~eigen~fast-math+features2d+flann~gtk+highgui+imgproc~ipp+ipp_iw+jasper+java+jpeg+lapack+ml+opencl+opencl_svm+openclamdblas+openclamdfft+openmp+png~powerpc+pthreads_pf+python~qt+shared+stitching+superres+tiff+ts+video+videoio+videostab~vsx~vtk+zlib
+      buildable: true
+      version: []
+      providers: {}
+      paths: {}
+      modules: {}
+      compiler: []
     openmpi:
       variants: fabrics=libfabric +pmi schedulers=slurm +legacylaunchers
+      buildable: true
+      version: []
+      providers: {}
+      paths: {}
+      modules: {}
+      compiler: []
     psm:
       compiler: [gcc@4.8.5]
+      buildable: true
+      version: []
+      providers: {}
+      paths: {}
+      modules: {}
     python:
-      variants: +tkinter+ucs4+optimizations
+      variants: +tkinter+ucs4 #consider +optimizations~shared
       version: [3.7.2, 2.7.16]
-
+      buildable: true
+      providers: {}
+      paths: {}
+      modules: {}
+      compiler: []
   repos: []
-
   config: {}
   mirrors: {}
-
