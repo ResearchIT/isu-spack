@@ -20,6 +20,9 @@ spack:
   - atlas
   - augustus
   - autofact
+
+
+
   
   # - bambam #not merged yet https://github.com/spack/spack/pull/9792
   - bamtools
@@ -50,7 +53,7 @@ spack:
   - bsseeker2
   - bucky
   - busco
-  - butter ^bowtie%gcc@7.4.0
+  - butter #^bowtie%gcc@7.4.0
   - bwa
   - canu
   - cap3
@@ -88,7 +91,8 @@ spack:
   - expat
   - express
   - falcon
-  - fast-gbs
+  
+  #- fast-gbs #not found
   - fastme
   - fastphase
   - fastqc
@@ -177,6 +181,9 @@ spack:
   - mafft
   - maq
   - mariadb
+
+
+
   
   #- mark #not merged yet https://github.com/spack/spack/pull/10513
   - masurca
@@ -187,6 +194,9 @@ spack:
   - mefit
   - meme
   - meraculous
+
+
+
   
   #- metasv #removed during relicense, needs recreated https://github.com/spack/spack/pull/9450 https://issues.its.iastate.edu/browse/RITPACK-1024
   - microbiomeutil
@@ -893,6 +903,9 @@ spack:
   - vsearch
   - wget
   - wgsim
+
+
+
   
   # - wrf build_type=dmpar compile_type=em_real nesting=basic # in progress https://github.com/spack/spack/pull/9851
   - wtdbg2
@@ -935,7 +948,7 @@ spack:
       hash_length: 7
   packages:
     all:
-      compiler: [gcc@8.3.0, gcc@7.4.0, gcc@6.5.0, gcc@4.8.5]
+      compiler: [gcc@4.8.5, gcc@8.3.0, gcc@7.4.0, gcc@6.5.0]
       providers:
         blas: [openblas]
         golang: [gcc]
@@ -953,26 +966,24 @@ spack:
       paths: {}
       modules: {}
     aegean:
-      compiler: [gcc@6.5.0]
       buildable: true
       version: []
       providers: {}
       paths: {}
       modules: {}
     allpaths-lg:
-      compiler: [gcc@4.8.5]
       buildable: true
       version: []
       providers: {}
       paths: {}
       modules: {}
     bowtie:
-      compiler: [gcc@7.4.0]
       buildable: true
       version: []
       providers: {}
       paths: {}
       modules: {}
+      compiler: []
     cgal:
       variants: +demos+imageio
       buildable: true
@@ -990,7 +1001,7 @@ spack:
       modules: {}
       compiler: []
     dealii:
-      variants: ~cuda cuda_arch= ~doc+gmsh+gsl+hdf5~int64+metis+mpi+muparser+nanoflann+netcdf+oce~optflags+p4est+petsc~python+scalapack+slepc+sundials+trilinos
+      variants: ~cuda ~doc+gmsh+gsl+hdf5~int64+metis+mpi+muparser+nanoflann+netcdf+oce~optflags+p4est+petsc~python+scalapack+slepc+sundials+trilinos
       buildable: true
       version: []
       providers: {}
@@ -1036,7 +1047,7 @@ spack:
       paths: {}
       modules: {}
     gcc@6.5.0:
-      compiler: [gcc@8.3.0]
+      compiler: [gcc@4.8.5]
       buildable: true
       version: []
       providers: {}
@@ -1044,6 +1055,14 @@ spack:
       modules: {}
     gmap-gsnap:
       variants: simd=sse2,sse42,avx2,avx512
+      buildable: true
+      version: []
+      providers: {}
+      paths: {}
+      modules: {}
+      compiler: []
+    hdf5:
+      variants: +hl
       buildable: true
       version: []
       providers: {}
@@ -1100,7 +1119,6 @@ spack:
       modules: {}
       compiler: []
     psm:
-      compiler: [gcc@4.8.5]
       buildable: true
       version: []
       providers: {}
@@ -1114,6 +1132,30 @@ spack:
       paths: {}
       modules: {}
       compiler: []
+    slurm:
+      buildable: false
+      variants: +pmix+mariadb
+      paths:
+        slurm@18.08.6-2: /usr
+      version: []
+      providers: {}
+      modules: {}
+      compiler: []
+    spades:
+      compiler: [gcc@8.3.0]
+      buildable: true
+      version: []
+      providers: {}
+      paths: {}
+      modules: {}
+    suite-sparse:
+      version: [5.1.0] #5.2.0 and above require newer compiler
+      buildable: true
+      providers: {}
+      paths: {}
+      modules: {}
+      compiler: []
   repos: []
   config: {}
   mirrors: {}
+  upstreams: {}
