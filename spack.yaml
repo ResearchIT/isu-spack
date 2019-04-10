@@ -1,5 +1,6 @@
 spack:
   specs:
+  
   - gcc@8.3.0
   - gcc@7.4.0
   - gcc@6.5.0
@@ -20,10 +21,6 @@ spack:
   - atlas
   - augustus
   - autofact
-
-
-
-  
   # - bambam #not merged yet https://github.com/spack/spack/pull/9792
   - bamtools
   - bamutil
@@ -91,6 +88,8 @@ spack:
   - expat
   - express
   - falcon
+
+
   
   #- fast-gbs #not found
   - fastme
@@ -144,7 +143,7 @@ spack:
   - hybpiper
   - hyphy
   - idba
-  - igv
+  #- igv not found
   - igvtools
   - image-magick
   - impute2
@@ -179,8 +178,10 @@ spack:
   - lzma
   - lzo
   - mafft
-  - maq
+  #- maq #needs older than default compiler
   - mariadb
+
+
 
 
 
@@ -197,6 +198,8 @@ spack:
 
 
 
+
+
   
   #- metasv #removed during relicense, needs recreated https://github.com/spack/spack/pull/9450 https://issues.its.iastate.edu/browse/RITPACK-1024
   - microbiomeutil
@@ -205,7 +208,7 @@ spack:
   - miniconda2
   - miniconda3
   - minimap2
-  - mirdeep
+  #- mirdeep #not found
   - mitofates
   - mlhka
   - mothur
@@ -245,7 +248,7 @@ spack:
   - parsimonator
   - partitionfinder
   - pbmpi
-  - pbsuite
+  #- pbsuite # psm issue with 8.3.0, need to see how I did this on build
   - pcma
   - perl
   - perl-algorithm-diff
@@ -349,8 +352,8 @@ spack:
   - py-biom-format
   - py-biopython
   - py-bottleneck
-  - py-breakseq2
-  - py-cdo
+  - py-breakseq2 ^samtools@1.6 ^htslib@1.6 ^bcftools@1.6
+  - py-cdo ^hdf5+threadsafe
   - py-certifi
   - py-cffi
   - py-checkm-genome
@@ -398,7 +401,7 @@ spack:
   - py-macs2
   - py-mako
   - py-mappy
-  - py-markdown
+  - py-markdown ^python@3.4
   - py-markupsafe
   - py-matplotlib
   - py-matplotlib~qt+tk
@@ -407,7 +410,7 @@ spack:
   - py-misopy
   - py-mistune
   - py-mpi4py
-  - py-multiqc
+  - py-multiqc ^python@3.4
   - py-mxnet
   - py-nbconvert
   - py-nbformat
@@ -433,7 +436,7 @@ spack:
   - py-ptyprocess
   - py-py
   - py-py2bit
-  - py-pybedtools
+  #- py-pybedtools #not found
   - py-pybigwig
   - py-pycparser
   - py-pycurl
@@ -485,20 +488,20 @@ spack:
   - qhull
   - qorts
   - r
-  - r-a4
-  - r-a4base
-  - r-a4classif
-  - r-a4core
-  - r-a4preproc
-  - r-a4reporting
+#  - r-a4 ^r@3.4.4         
+#  - r-a4base ^r@3.4.4
+#  - r-a4classif ^r@3.4.4
+#  - r-a4core ^r@3.4.4
+#  - r-a4preproc ^r@3.4.4
+#  - r-a4reporting ^r@3.4.4
   - r-acepack
   - randfold
   - randrproto
-  - r-annaffy
+#  - r-annaffy ^r@3.4.4
   - r-annotate
   - r-annotationdbi
-  - r-annotationfilter
-  - r-annotationhub
+#  - r-annotationfilter ^r@3.4.4
+#  - r-annotationhub ^r@3.4.4
   - r-ape
   - r-assertthat
   - raxml
@@ -514,7 +517,7 @@ spack:
   - r-bindrcpp
   - r-biobase
   - r-biocgenerics
-  - r-biocinstaller
+#  - r-biocinstaller ^r@3.4.4
   - r-biocparallel
   - r-biomart
   - r-biom-utils
@@ -525,8 +528,8 @@ spack:
   - r-blob
   - r-brew
   - r-broom
-  - r-bsgenome
-  - r-bumphunter
+#  - r-bsgenome ^r@3.4.4
+#  - r-bumphunter ^r@3.4.4
   - r-cairo
   - r-car
   - r-caret
@@ -537,7 +540,7 @@ spack:
   - rclone
   - r-cluster
   - r-clustergeneration
-  - r-cner
+#  - r-cner ^r-zlibbioc^r@3.4.4
   - r-coda
   - r-codetools
   - r-colorspace
@@ -569,10 +572,10 @@ spack:
   - recordproto
   - r-edger
   - redundans
-  - relion+cuda cuda_arch=62 +double~double-gpu+gui
-  - relion~cuda cuda_arch=+double~double-gpu+gui
+  - relion+cuda cuda_arch=62 +double~double-gpu+gui ^cuda@8.0.61 #don't understand why when i bump cuda_arch to 70, tries to use cuda@9
+  - relion~cuda +double~double-gpu+gui
   - renderproto
-  - r-ensembldb
+#  - r-ensembldb ^r-zlibbioc ^r@3.4
   - repeatmasker
   - r-evaluate
   - revbayes build_type=Release ~mpi
@@ -591,7 +594,7 @@ spack:
   - r-gbm
   - r-gdalutils
   - r-gdata
-  - r-gdsfmt
+  - r-gdsfmt ^r@3.4
   - r-genefilter
   - r-genie3
   - r-genomeinfodb
@@ -600,7 +603,7 @@ spack:
   - r-genomicfeatures
   - r-genomicranges
   - r-geomorph
-  - r-geoquery
+#  - r-geoquery ^r@3.4
   - r-geosphere
   - r-getopt
   - r-ggmap
@@ -625,9 +628,9 @@ spack:
   - r-httr
   - r-hwriter
   - r-igraph
-  - r-illuminaio
+  - r-illuminaio ^r@3.4
   - r-inline
-  - r-interactivedisplaybase
+#  - r-interactivedisplaybase ^r@3.4.4
   - r-iranges
   - r-irlba
   - r-iterators
@@ -636,7 +639,7 @@ spack:
   - r-jpeg
   - r-jsonlite
   - r-kegg-db
-  - r-keggrest
+#  - r-keggrest ^r@3.4
   - r-kernlab
   - r-kernsmooth
   - r-knitr
@@ -668,18 +671,18 @@ spack:
   - r-mgraster
   - r-mice
   - r-mime
-  - r-minfi
+#  - r-minfi ^r-illuminaio ^r@3.4
   - r-minqa
   - r-mitml
   - r-mlbench
-  - r-mlinterfaces
+#  - r-mlinterfaces ^r@3.4
   - r-mmwrweek
   - r-mnormt
   - r-modelmetrics
   - r-modeltools
   - r-mpm
   - r-multcomp
-  - r-multtest
+#  - r-multtest ^r@3.4
   - r-munsell
   - r-mvtnorm
   - rna-seqc
@@ -696,7 +699,7 @@ spack:
   - r-pamr
   - r-pan
   - r-pbkrtest
-  - r-pfam-db
+#  - r-pfam-db ^r@3.4
   - r-phangorn
   - r-phantompeakqualtools
   - r-phytools
@@ -711,14 +714,14 @@ spack:
   - r-prabclus
   - r-praise
   - r-preprocesscore
-  - r-protgenerics
+#  - r-protgenerics ^r@3.4
   - r-proto
   - r-psych
   - r-purrr
   - r-quadprog
   - r-quantmod
   - r-quantreg
-  - r-quantro
+#  - r-quantro ^r-illuminaio ^r@3.4
   - r-r6
   - r-randomforest
   - r-rappdirs
@@ -762,19 +765,19 @@ spack:
   - r-scales
   - r-selectr
   - rsem
-  - r-seqlogo
+#  - r-seqlogo ^r@3.4
   - r-sf
   - r-sfsmisc
   - r-shiny
-  - r-siggenes
+#  - r-siggenes 6r@3.4
   - r-snow
   - r-snowfall
-  - r-snprelate
+#  - r-snprelate ^r-gdsfmt ^r@3.4
   - r-sourcetools
   - r-sp
   - r-sparsem
   - r-spatial
-  - r-spem
+#  - r-spem r@3.4
   - r-splitstackshape
   - r-stanheaders
   - r-stringi
@@ -785,7 +788,7 @@ spack:
   - r-tensora
   - r-testit
   - r-testthat
-  - r-tfbstools
+#  - r-tfbstools ^r@3.4 ^r-zlibbioc ^r@3.5
   - r-tfmpvalue
   - r-th-data
   - r-threejs
@@ -793,7 +796,7 @@ spack:
   - r-tidycensus
   - r-tidyr
   - r-tigris
-  - r-tmixclust
+#  - r-tmixclust r@3.4
   - r-trimcluster
   - r-truncnorm
   - r-ttr
@@ -818,7 +821,7 @@ spack:
   - r-xts
   - r-xvector
   - r-yaml
-  - r-yarn
+#  - r-yarn ^r@3.4
   - r-zlibbioc
   - r-zoo
   - sabre
@@ -846,7 +849,7 @@ spack:
   - snap-korf
   - snappy
   - snpeff
-  - snphylo
+#  - snphylo ^ri-gdsfmt ^r@3.4
   - soap2
   - soapdenovo2
   - soapdenovo-trans
@@ -903,6 +906,9 @@ spack:
   - vsearch
   - wget
   - wgsim
+
+
+
 
 
 
@@ -971,12 +977,14 @@ spack:
       providers: {}
       paths: {}
       modules: {}
+      compiler: []
     allpaths-lg:
       buildable: true
       version: []
       providers: {}
       paths: {}
       modules: {}
+      compiler: []
     bowtie:
       buildable: true
       version: []
@@ -1124,6 +1132,7 @@ spack:
       providers: {}
       paths: {}
       modules: {}
+      compiler: []
     python:
       variants: +tkinter+ucs4 #consider +optimizations~shared
       version: [3.7.2, 2.7.16]
@@ -1148,6 +1157,41 @@ spack:
       providers: {}
       paths: {}
       modules: {}
+    hybpiper:
+      compiler: [gcc@8.3.0] #because dep spades needs higher than default
+      buildable: true
+      version: []
+      providers: {}
+      paths: {}
+      modules: {}
+    hyphy:
+      compiler: [gcc@8.3.0]
+      buildable: true
+      version: []
+      providers: {}
+      paths: {}
+      modules: {}
+    maverick:
+      compiler: [gcc@8.3.0]
+      buildable: true
+      version: []
+      providers: {}
+      paths: {}
+      modules: {}
+    pbbam:
+      compiler: [gcc@8.3.0]
+      buildable: true
+      version: []
+      providers: {}
+      paths: {}
+      modules: {}
+    pbsuite:
+      compiler: [gcc@8.3.0]
+      buildable: true
+      version: []
+      providers: {}
+      paths: {}
+      modules: {}
     suite-sparse:
       version: [5.1.0] #5.2.0 and above require newer compiler
       buildable: true
@@ -1155,6 +1199,27 @@ spack:
       paths: {}
       modules: {}
       compiler: []
+    r:
+      version: [3.5.3, 3.4.4]
+      buildable: true
+      providers: {}
+      paths: {}
+      modules: {}
+      compiler: []
+    relion:
+      version: [2.1]
+      buildable: true
+      providers: {}
+      paths: {}
+      modules: {}
+      compiler: []
+    stacks:
+      compiler: [gcc@8.3.0]
+      buildable: true
+      version: []
+      providers: {}
+      paths: {}
+      modules: {}
   repos: []
   config: {}
   mirrors: {}
