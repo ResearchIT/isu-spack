@@ -1,6 +1,5 @@
 spack:
   specs:
-  
   - gcc@8.3.0
   - gcc@7.4.0
   - gcc@6.5.0
@@ -21,6 +20,13 @@ spack:
   - atlas
   - augustus
   - autofact
+
+
+
+
+
+
+  
   # - bambam #not merged yet https://github.com/spack/spack/pull/9792
   - bamtools
   - bamutil
@@ -90,6 +96,13 @@ spack:
   - falcon
 
 
+
+
+
+
+
+
+
   
   #- fast-gbs #not found
   - fastme
@@ -143,6 +156,13 @@ spack:
   - hybpiper
   - hyphy
   - idba
+
+
+
+
+
+
+  
   #- igv not found
   - igvtools
   - image-magick
@@ -178,8 +198,22 @@ spack:
   - lzma
   - lzo
   - mafft
+
+
+
+
+
+
+  
   #- maq #needs older than default compiler
   - mariadb
+
+
+
+
+
+
+
 
 
 
@@ -200,6 +234,13 @@ spack:
 
 
 
+
+
+
+
+
+
+
   
   #- metasv #removed during relicense, needs recreated https://github.com/spack/spack/pull/9450 https://issues.its.iastate.edu/browse/RITPACK-1024
   - microbiomeutil
@@ -208,6 +249,13 @@ spack:
   - miniconda2
   - miniconda3
   - minimap2
+
+
+
+
+
+
+  
   #- mirdeep #not found
   - mitofates
   - mlhka
@@ -248,6 +296,13 @@ spack:
   - parsimonator
   - partitionfinder
   - pbmpi
+
+
+
+
+
+
+  
   #- pbsuite # psm issue with 8.3.0, need to see how I did this on build
   - pcma
   - perl
@@ -352,7 +407,7 @@ spack:
   - py-biom-format
   - py-biopython
   - py-bottleneck
-  - py-breakseq2 ^samtools@1.6 ^htslib@1.6 ^bcftools@1.6
+  - py-breakseq2 ^bcftools@1.6 ^htslib@1.6 ^samtools@1.6
   - py-cdo ^hdf5+threadsafe
   - py-certifi
   - py-cffi
@@ -436,6 +491,13 @@ spack:
   - py-ptyprocess
   - py-py
   - py-py2bit
+
+
+
+
+
+
+  
   #- py-pybedtools #not found
   - py-pybigwig
   - py-pycparser
@@ -488,6 +550,13 @@ spack:
   - qhull
   - qorts
   - r
+
+
+
+
+
+
+  
 #  - r-a4 ^r@3.4.4         
 #  - r-a4base ^r@3.4.4
 #  - r-a4classif ^r@3.4.4
@@ -497,9 +566,23 @@ spack:
   - r-acepack
   - randfold
   - randrproto
+
+
+
+
+
+
+  
 #  - r-annaffy ^r@3.4.4
   - r-annotate
   - r-annotationdbi
+
+
+
+
+
+
+  
 #  - r-annotationfilter ^r@3.4.4
 #  - r-annotationhub ^r@3.4.4
   - r-ape
@@ -517,6 +600,13 @@ spack:
   - r-bindrcpp
   - r-biobase
   - r-biocgenerics
+
+
+
+
+
+
+  
 #  - r-biocinstaller ^r@3.4.4
   - r-biocparallel
   - r-biomart
@@ -528,6 +618,13 @@ spack:
   - r-blob
   - r-brew
   - r-broom
+
+
+
+
+
+
+  
 #  - r-bsgenome ^r@3.4.4
 #  - r-bumphunter ^r@3.4.4
   - r-cairo
@@ -540,6 +637,13 @@ spack:
   - rclone
   - r-cluster
   - r-clustergeneration
+
+
+
+
+
+
+  
 #  - r-cner ^r-zlibbioc^r@3.4.4
   - r-coda
   - r-codetools
@@ -573,8 +677,15 @@ spack:
   - r-edger
   - redundans
   - relion+cuda cuda_arch=62 +double~double-gpu+gui ^cuda@8.0.61 #don't understand why when i bump cuda_arch to 70, tries to use cuda@9
-  - relion~cuda +double~double-gpu+gui
+  - relion~cuda+double~double-gpu+gui
   - renderproto
+
+
+
+
+
+
+  
 #  - r-ensembldb ^r-zlibbioc ^r@3.4
   - repeatmasker
   - r-evaluate
@@ -603,6 +714,13 @@ spack:
   - r-genomicfeatures
   - r-genomicranges
   - r-geomorph
+
+
+
+
+
+
+  
 #  - r-geoquery ^r@3.4
   - r-geosphere
   - r-getopt
@@ -630,6 +748,13 @@ spack:
   - r-igraph
   - r-illuminaio ^r@3.4
   - r-inline
+
+
+
+
+
+
+  
 #  - r-interactivedisplaybase ^r@3.4.4
   - r-iranges
   - r-irlba
@@ -639,6 +764,13 @@ spack:
   - r-jpeg
   - r-jsonlite
   - r-kegg-db
+
+
+
+
+
+
+  
 #  - r-keggrest ^r@3.4
   - r-kernlab
   - r-kernsmooth
@@ -671,10 +803,24 @@ spack:
   - r-mgraster
   - r-mice
   - r-mime
+
+
+
+
+
+
+  
 #  - r-minfi ^r-illuminaio ^r@3.4
   - r-minqa
   - r-mitml
   - r-mlbench
+
+
+
+
+
+
+  
 #  - r-mlinterfaces ^r@3.4
   - r-mmwrweek
   - r-mnormt
@@ -682,6 +828,13 @@ spack:
   - r-modeltools
   - r-mpm
   - r-multcomp
+
+
+
+
+
+
+  
 #  - r-multtest ^r@3.4
   - r-munsell
   - r-mvtnorm
@@ -699,6 +852,13 @@ spack:
   - r-pamr
   - r-pan
   - r-pbkrtest
+
+
+
+
+
+
+  
 #  - r-pfam-db ^r@3.4
   - r-phangorn
   - r-phantompeakqualtools
@@ -714,6 +874,13 @@ spack:
   - r-prabclus
   - r-praise
   - r-preprocesscore
+
+
+
+
+
+
+  
 #  - r-protgenerics ^r@3.4
   - r-proto
   - r-psych
@@ -721,6 +888,13 @@ spack:
   - r-quadprog
   - r-quantmod
   - r-quantreg
+
+
+
+
+
+
+  
 #  - r-quantro ^r-illuminaio ^r@3.4
   - r-r6
   - r-randomforest
@@ -765,18 +939,46 @@ spack:
   - r-scales
   - r-selectr
   - rsem
+
+
+
+
+
+
+  
 #  - r-seqlogo ^r@3.4
   - r-sf
   - r-sfsmisc
   - r-shiny
+
+
+
+
+
+
+  
 #  - r-siggenes 6r@3.4
   - r-snow
   - r-snowfall
+
+
+
+
+
+
+  
 #  - r-snprelate ^r-gdsfmt ^r@3.4
   - r-sourcetools
   - r-sp
   - r-sparsem
   - r-spatial
+
+
+
+
+
+
+  
 #  - r-spem r@3.4
   - r-splitstackshape
   - r-stanheaders
@@ -788,6 +990,13 @@ spack:
   - r-tensora
   - r-testit
   - r-testthat
+
+
+
+
+
+
+  
 #  - r-tfbstools ^r@3.4 ^r-zlibbioc ^r@3.5
   - r-tfmpvalue
   - r-th-data
@@ -796,6 +1005,13 @@ spack:
   - r-tidycensus
   - r-tidyr
   - r-tigris
+
+
+
+
+
+
+  
 #  - r-tmixclust r@3.4
   - r-trimcluster
   - r-truncnorm
@@ -821,6 +1037,13 @@ spack:
   - r-xts
   - r-xvector
   - r-yaml
+
+
+
+
+
+
+  
 #  - r-yarn ^r@3.4
   - r-zlibbioc
   - r-zoo
@@ -849,6 +1072,13 @@ spack:
   - snap-korf
   - snappy
   - snpeff
+
+
+
+
+
+
+  
 #  - snphylo ^ri-gdsfmt ^r@3.4
   - soap2
   - soapdenovo2
@@ -906,6 +1136,13 @@ spack:
   - vsearch
   - wget
   - wgsim
+
+
+
+
+
+
+
 
 
 
