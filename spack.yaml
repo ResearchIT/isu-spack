@@ -2,6 +2,7 @@ spack:
   specs:
   - gcc@9.1.0
 
+
   
   #- gcc@8.3.0
   #- gcc@7.4.0
@@ -23,6 +24,7 @@ spack:
   - astral
   - atlas
   - augustus
+  
   # - bambam #not merged yet https://github.com/spack/spack/pull/9792
   - bamtools
   - bamutil
@@ -90,6 +92,7 @@ spack:
   - expat
   - express
   - falcon
+
   
   #- fast-gbs #not found
   - fastme
@@ -143,6 +146,7 @@ spack:
   - hybpiper
   - hyphy
   - idba
+
   
   #- igv not found
   - igvtools
@@ -179,9 +183,11 @@ spack:
   - lzma
   - lzo
   - mafft
+
   
   #- maq #needs older than default compiler
   - mariadb
+
   
   #- mark #not merged yet https://github.com/spack/spack/pull/10513
   - masurca
@@ -192,6 +198,7 @@ spack:
   - mefit
   - meme
   - meraculous
+
   
   #- metasv #removed during relicense, needs recreated https://github.com/spack/spack/pull/9450 https://issues.its.iastate.edu/browse/RITPACK-1024
   - microbiomeutil
@@ -200,6 +207,7 @@ spack:
   - miniconda2
   - miniconda3
   - minimap2
+
   
   #- mirdeep #not found
   - mitofates
@@ -241,6 +249,7 @@ spack:
   - parsimonator
   - partitionfinder
   - pbmpi
+
   
   #- pbsuite # psm issue with 8.3.0, need to see how I did this on build
   - pcma
@@ -430,6 +439,7 @@ spack:
   - py-ptyprocess
   - py-py
   - py-py2bit
+
   
   #- py-pybedtools #not found
   - py-pybigwig
@@ -483,6 +493,7 @@ spack:
   - qhull
   - qorts
   - r
+
   
 #  - r-a4 ^r@3.4.4         
 #  - r-a4base ^r@3.4.4
@@ -493,10 +504,12 @@ spack:
   - r-acepack
   - randfold
   - randrproto
+
   
 #  - r-annaffy ^r@3.4.4
   - r-annotate
   - r-annotationdbi
+
   
 #  - r-annotationfilter ^r@3.4.4
 #  - r-annotationhub ^r@3.4.4
@@ -515,6 +528,7 @@ spack:
   - r-bindrcpp
   - r-biobase
   - r-biocgenerics
+
   
 #  - r-biocinstaller ^r@3.4.4
   - r-biocparallel
@@ -527,6 +541,7 @@ spack:
   - r-blob
   - r-brew
   - r-broom
+
   
 #  - r-bsgenome ^r@3.4.4
 #  - r-bumphunter ^r@3.4.4
@@ -540,6 +555,7 @@ spack:
   - rclone
   - r-cluster
   - r-clustergeneration
+
   
 #  - r-cner ^r-zlibbioc^r@3.4.4
   - r-coda
@@ -576,6 +592,7 @@ spack:
   - relion+cuda cuda_arch=62 +double~double-gpu+gui ^cuda@8.0.61 #don't understand why when i bump cuda_arch to 70, tries to use cuda@9
   - relion~cuda+double~double-gpu+gui
   - renderproto
+
   
 #  - r-ensembldb ^r-zlibbioc ^r@3.4
   - repeatmasker
@@ -605,6 +622,7 @@ spack:
   - r-genomicfeatures
   - r-genomicranges
   - r-geomorph
+
   
 #  - r-geoquery ^r@3.4
   - r-geosphere
@@ -633,6 +651,7 @@ spack:
   - r-igraph
   - r-illuminaio ^r@3.4
   - r-inline
+
   
 #  - r-interactivedisplaybase ^r@3.4.4
   - r-iranges
@@ -643,6 +662,7 @@ spack:
   - r-jpeg
   - r-jsonlite
   - r-kegg-db
+
   
 #  - r-keggrest ^r@3.4
   - r-kernlab
@@ -676,11 +696,13 @@ spack:
   - r-mgraster
   - r-mice
   - r-mime
+
   
 #  - r-minfi ^r-illuminaio ^r@3.4
   - r-minqa
   - r-mitml
   - r-mlbench
+
   
 #  - r-mlinterfaces ^r@3.4
   - r-mmwrweek
@@ -689,6 +711,7 @@ spack:
   - r-modeltools
   - r-mpm
   - r-multcomp
+
   
 #  - r-multtest ^r@3.4
   - r-munsell
@@ -707,6 +730,7 @@ spack:
   - r-pamr
   - r-pan
   - r-pbkrtest
+
   
 #  - r-pfam-db ^r@3.4
   - r-phangorn
@@ -723,6 +747,7 @@ spack:
   - r-prabclus
   - r-praise
   - r-preprocesscore
+
   
 #  - r-protgenerics ^r@3.4
   - r-proto
@@ -731,6 +756,7 @@ spack:
   - r-quadprog
   - r-quantmod
   - r-quantreg
+
   
 #  - r-quantro ^r-illuminaio ^r@3.4
   - r-r6
@@ -776,21 +802,25 @@ spack:
   - r-scales
   - r-selectr
   - rsem
+
   
 #  - r-seqlogo ^r@3.4
   - r-sf
   - r-sfsmisc
   - r-shiny
+
   
 #  - r-siggenes 6r@3.4
   - r-snow
   - r-snowfall
+
   
 #  - r-snprelate ^r-gdsfmt ^r@3.4
   - r-sourcetools
   - r-sp
   - r-sparsem
   - r-spatial
+
   
 #  - r-spem r@3.4
   - r-splitstackshape
@@ -803,6 +833,7 @@ spack:
   - r-tensora
   - r-testit
   - r-testthat
+
   
 #  - r-tfbstools ^r@3.4 ^r-zlibbioc ^r@3.5
   - r-tfmpvalue
@@ -812,6 +843,7 @@ spack:
   - r-tidycensus
   - r-tidyr
   - r-tigris
+
   
 #  - r-tmixclust r@3.4
   - r-trimcluster
@@ -838,6 +870,7 @@ spack:
   - r-xts
   - r-xvector
   - r-yaml
+
   
 #  - r-yarn ^r@3.4
   - r-zlibbioc
@@ -867,6 +900,7 @@ spack:
   - snap-korf
   - snappy
   - snpeff
+
   
 #  - snphylo ^ri-gdsfmt ^r@3.4
   - soap2
@@ -925,6 +959,7 @@ spack:
   - vsearch
   - wget
   - wgsim
+
   
   # - wrf build_type=dmpar compile_type=em_real nesting=basic # in progress https://github.com/spack/spack/pull/9851
   - wtdbg2
@@ -1074,6 +1109,8 @@ spack:
       providers: {}
       paths: {}
       modules: {}
+    gdal:
+      variants: crypto,curl,geos,hdf5,java,jpeg,netcdf,perl,pg,png,python,sqlite3,xml2,zstd
     gmap-gsnap:
       variants: simd=sse2,sse42,avx2,avx512
       buildable: true
