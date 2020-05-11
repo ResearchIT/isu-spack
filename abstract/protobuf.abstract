@@ -1,1 +1,0 @@
-protobuf@3.1.0%gcc@4.8.5 build_type=RelWithDebInfo patches=e0e42d7537178f2bddc21538f1390849a42cf5a5250eba3fa52d4ba9658e033d +shared arch=linux-rhel7-x86_64 ^zlib@1.2.11%gcc@4.8.5+optimize+pic+shared arch=linux-rhel7-x86_64 

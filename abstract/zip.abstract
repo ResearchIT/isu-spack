@@ -1,1 +1,0 @@
-zip@3.0%gcc@4.8.5 arch=linux-rhel7-x86_64 ^bzip2@1.0.6%gcc@4.8.5+shared arch=linux-rhel7-x86_64 

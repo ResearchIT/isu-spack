@@ -1,1 +1,0 @@
-perl-log-log4perl@146%gcc@4.8.5 arch=linux-rhel7-x86_64 ^perl@5.24.1%gcc@4.8.5+cpanm+shared arch=linux-rhel7-x86_64 ^gdbm@1.14.1%gcc@4.8.5 arch=linux-rhel7-x86_64 ^readline@7.0%gcc@4.8.5 arch=linux-rhel7-x86_64 ^ncurses@6.0%gcc@4.8.5 patches=f84b2708a42777aadcc7f502a261afe10ca5646a51c1ef8b5e60d2070d926b57 ~symlinks~termlib arch=linux-rhel7-x86_64 

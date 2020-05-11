@@ -1,1 +1,0 @@
-bamutil@1.0.13%gcc@4.8.5 patches=da45587e34ab29e6f506e3d596b1b9ec0a8a63622d667bb460ac1c18aaf9eba6 arch=linux-rhel7-x86_64 ^zlib@1.2.11%gcc@4.8.5+optimize+pic+shared arch=linux-rhel7-x86_64 
