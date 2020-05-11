@@ -1,1 +1,0 @@
-libxau@1.0.8%gcc@4.8.5 arch=linux-rhel7-x86_64 ^xproto@7.0.31%gcc@4.8.5 arch=linux-rhel7-x86_64 

@@ -1,1 +1,0 @@
-rdma-core@13%gcc@4.8.5 build_type=RelWithDebInfo arch=linux-rhel7-x86_64 ^libnl@3.3.0%gcc@4.8.5 arch=linux-rhel7-x86_64 

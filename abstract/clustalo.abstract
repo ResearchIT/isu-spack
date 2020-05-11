@@ -1,1 +1,0 @@
-clustalo@1.2.4%gcc@4.8.5 arch=linux-rhel7-x86_64 ^argtable@2-13%gcc@4.8.5 arch=linux-rhel7-x86_64 

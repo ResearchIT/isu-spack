@@ -1,1 +1,0 @@
-libsm@1.2.2%gcc@4.8.5 arch=linux-rhel7-x86_64 ^libice@1.0.9%gcc@4.8.5 arch=linux-rhel7-x86_64 

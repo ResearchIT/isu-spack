@@ -1,1 +1,0 @@
-libgcrypt@1.8.1%gcc@4.8.5 arch=linux-rhel7-x86_64 ^libgpg-error@1.27%gcc@4.8.5 arch=linux-rhel7-x86_64 
