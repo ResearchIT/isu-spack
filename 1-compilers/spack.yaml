@@ -2,23 +2,24 @@ spack:
   specs:
   - gcc@9.3.0
   - intel-parallel-studio@cluster.2020.1 
-  'compilers:':
-  - compiler:
-      environment: {unset: []}
-      extra_rpaths: []
-      flags: {}
-      modules: []
-      operating_system: rhel7
-      paths:
-        cc: /usr/bin/gcc
-        cxx: /usr/bin/g++
-        f77: /usr/bin/gfortran
-        fc: /usr/bin/gfortran
-      spec: gcc@4.8.5
-      target: x86_64
+  
+  compilers::
+    - compiler:
+        environment: {unset: []}
+        extra_rpaths: []
+        flags: {}
+        modules: []
+        operating_system: rhel7
+        paths:
+          cc: /usr/bin/gcc
+          cxx: /usr/bin/g++
+          f77: /usr/bin/gfortran
+          fc: /usr/bin/gfortran
+        spec: gcc@4.8.5
+        target: x86_64
   modules:
-    'enable:':
-    - lmod
+    enable::
+      - lmod
 
     lmod:
       core_compilers:

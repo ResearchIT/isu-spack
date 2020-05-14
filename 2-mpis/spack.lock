@@ -369,6 +369,99 @@
     "hash": "oa7fsj3x432pdckfv5lqlpevghrp42mc"
    }
   },
+  "sjjyrgogssr2udgq4ftjrsc32zbwh26p": {
+   "mvapich2": {
+    "version": "2.3.3",
+    "arch": {
+     "platform": "linux",
+     "platform_os": "rhel7",
+     "target": "x86_64"
+    },
+    "compiler": {
+     "name": "gcc",
+     "version": "9.3.0"
+    },
+    "namespace": "builtin",
+    "parameters": {
+     "alloca": false,
+     "ch3_rank_bits": "32",
+     "cuda": false,
+     "debug": false,
+     "fabrics": "psm2",
+     "file_systems": [
+      "lustre"
+     ],
+     "process_managers": [
+      "slurm"
+     ],
+     "regcache": true,
+     "threads": "multiple",
+     "wrapperrpath": true,
+     "cflags": [],
+     "cppflags": [],
+     "cxxflags": [],
+     "fflags": [],
+     "ldflags": [],
+     "ldlibs": []
+    },
+    "dependencies": {
+     "bison": {
+      "hash": "43rljoxj55mxom4cmhait53oa2pd36it",
+      "type": [
+       "build"
+      ]
+     },
+     "findutils": {
+      "hash": "jvfi2fwatwpj55qvzoo4ge2jlyh2pmrf",
+      "type": [
+       "build"
+      ]
+     },
+     "libpciaccess": {
+      "hash": "ax3tcleufe7xcwyeochua2t4tndhrqdf",
+      "type": [
+       "build",
+       "link"
+      ]
+     },
+     "libxml2": {
+      "hash": "6aeeetsr36ltyht2thvymsgfffgvwoaq",
+      "type": [
+       "build",
+       "link"
+      ]
+     },
+     "opa-psm2": {
+      "hash": "32vl3rpzapycd3kpahirfjftfoqbzqph",
+      "type": [
+       "build",
+       "link"
+      ]
+     },
+     "pkg-config": {
+      "hash": "xti4cyokzsr7untovf4ia7fjewczj7b2",
+      "type": [
+       "build"
+      ]
+     },
+     "slurm": {
+      "hash": "ox2dxsprncgittarn3673f6yysyy4fjn",
+      "type": [
+       "build",
+       "link"
+      ]
+     },
+     "zlib": {
+      "hash": "uubmvorewcdyv5urdqiky4wcoehj4xug",
+      "type": [
+       "build",
+       "link"
+      ]
+     }
+    },
+    "hash": "jgpyxkkuwhztocdnl2yxra6miaoha5ll"
+   }
+  },
   "bnzhvqxmlkhuwyqbq3zvvkocycnrxrne": {
    "libsigsegv": {
     "version": "2.12",
@@ -1655,16 +1748,20 @@
  },
  "roots": [
   {
-   "hash": "smwpyojm2y7ljszg4sapluz5hu4e3qmw",
-   "spec": "mpich"
-  },
-  {
    "hash": "hzxe7jwyhojizsgh7btxuqi6nghbuwep",
    "spec": "openmpi@4.0.3"
   },
   {
    "hash": "zyyxe7a5oegkzatopynkbeortgknw72o",
    "spec": "openmpi@3.1.6"
+  },
+  {
+   "hash": "smwpyojm2y7ljszg4sapluz5hu4e3qmw",
+   "spec": "mpich"
+  },
+  {
+   "hash": "sjjyrgogssr2udgq4ftjrsc32zbwh26p",
+   "spec": "mvapich2"
   }
  ]
 }
