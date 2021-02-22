@@ -65,7 +65,7 @@ spack:
       paths: {}
       modules: {}
     openmpi:
-      variants: fabrics=libfabric ~java schedulers=slurm +pmi ~sqlite3 ~thread_multiple
+      variants: fabrics=ofi ~java schedulers=slurm +pmi ~sqlite3 ~thread_multiple
         +vt +legacylaunchers
       buildable: true
       version: ['4.0.3', '3.1.6']
@@ -94,9 +94,18 @@ spack:
       compiler: []
     slurm:
       buildable: false
-      variants: +pmix
+      variants: +pmix sysconfdir=/etc/slurm
       paths:
         slurm@19-05-5-1: /usr
+      version: []
+      target: []
+      providers: {}
+      modules: {}
+      compiler: []
+    munge:
+      buildable: false
+      variants: localstatedir=/var
+      paths: {}
       version: []
       target: []
       providers: {}
